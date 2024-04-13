@@ -113,24 +113,20 @@ jobs:
           variant_names=$(echo '${{ needs.build_and_test_images.outputs.variants }}' | jq -r '.[].variant' | paste -sd, -)
           echo "::set-output name=variant_names::$variant_names"
 
-      - name: Commit changes
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add nodeVariants.json
-          git commit -m "feat: update variants ${{ steps.prepare_commit.outputs.variant_names }}"
-          git push
-
       - name: Create Pull Request
+        id: create_pull_request
         uses: peter-evans/create-pull-request@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "feat: update variants ${{ steps.prepare_commit.outputs.variant_names }}"
           title: "feat: update variants ${{ steps.prepare_commit.outputs.variant_names }}"
-          branch: "feature-update-variants"
-
-      - name: Auto-merge Pull Request
-        uses: pascalgn/automerge-action@v0.14.3
+          branch: "feature/update-variants"
+          add-paths: "nodeVariants.json"
+      
+      - name: Enable Pull Request Automerge
+        if: steps.create_pull_request.outputs.pull-request-operation == 'created'
+        uses: peter-evans/enable-pull-request-automerge@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          pull-request-number: ${{ steps.create_pull_request.outputs.pull-request-number }}
           merge-method: squash

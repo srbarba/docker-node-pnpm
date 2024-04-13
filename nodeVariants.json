@@ -2,11 +2,11 @@
   {
     "variant": "21.7.3",
     "tags": [
-      "8.15-node21-alpine3.18",
-      "8.15-node21.7-alpine3.18",
-      "8.15-node21.7.3-alpine3.18",
-      "alpine3.18",
-      "current-alpine3.18"
+      "8.15-node21-alpine3.17",
+      "8.15-node21.7-alpine3.17",
+      "8.15-node21.7.3-alpine3.17",
+      "alpine3.17",
+      "current-alpine3.17"
     ],
     "architectures": [
       "amd64",
@@ -16,7 +16,7 @@
       "ppc64le",
       "s390x"
     ],
-    "directory": "21/alpine3.18"
+    "directory": "21/alpine3.17"
   },
   {
     "variant": "21.7.3",
@@ -130,11 +130,11 @@
   {
     "variant": "20.12.2",
     "tags": [
-      "8.15-node20-alpine3.18",
-      "8.15-node20.12-alpine3.18",
-      "8.15-node20.12.2-alpine3.18",
-      "iron-alpine3.18",
-      "lts-alpine3.18"
+      "8.15-node20-alpine3.17",
+      "8.15-node20.12-alpine3.17",
+      "8.15-node20.12.2-alpine3.17",
+      "iron-alpine3.17",
+      "lts-alpine3.17"
     ],
     "architectures": [
       "amd64",
@@ -144,7 +144,7 @@
       "ppc64le",
       "s390x"
     ],
-    "directory": "20/alpine3.18"
+    "directory": "20/alpine3.17"
   },
   {
     "variant": "20.12.2",
@@ -288,10 +288,10 @@
   {
     "variant": "18.20.2",
     "tags": [
-      "8.15-node18-alpine3.18",
-      "8.15-node18.20-alpine3.18",
-      "8.15-node18.20.2-alpine3.18",
-      "hydrogen-alpine3.18"
+      "8.15-node18-alpine3.17",
+      "8.15-node18.20-alpine3.17",
+      "8.15-node18.20.2-alpine3.17",
+      "hydrogen-alpine3.17"
     ],
     "architectures": [
       "amd64",
@@ -301,7 +301,7 @@
       "ppc64le",
       "s390x"
     ],
-    "directory": "18/alpine3.18"
+    "directory": "18/alpine3.17"
   },
   {
     "variant": "18.20.2",
