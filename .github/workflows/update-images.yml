@@ -76,12 +76,12 @@ jobs:
           context: .
           file: ./Dockerfile
           push: false
-          tags: "pnpm:${{ matrix.variant.tags[0] }}:test"
+          tags: "pnpm:${{ matrix.variant.tags[0] }}-test"
           load: true # Important for testing the image in subsequent steps
 
       - name: Test Docker image
         run: |
-          docker run --rm "pnpm:${{ matrix.variant.tags[0] }}:test" pnpm -v
+          docker run --rm "pnpm:${{ matrix.variant.tags[0] }}-test" pnpm -v
 
       - name: Push Docker image if tests pass
         uses: docker/build-push-action@v3
