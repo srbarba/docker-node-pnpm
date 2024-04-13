@@ -1,12 +1,13 @@
 [
   {
-    "variant": "21.7.3",
+    "nodeVersion": "21.7.3",
+    "variant": "8.15-node21-alpine3.18",
     "tags": [
-      "8.15-node21-alpine3.17",
-      "8.15-node21.7-alpine3.17",
-      "8.15-node21.7.3-alpine3.17",
-      "alpine3.17",
-      "current-alpine3.17"
+      "8.15-node21-alpine3.18",
+      "8.15-node21.7-alpine3.18",
+      "8.15-node21.7.3-alpine3.18",
+      "alpine3.18",
+      "current-alpine3.18"
     ],
     "architectures": [
       "amd64",
@@ -16,10 +17,11 @@
       "ppc64le",
       "s390x"
     ],
-    "directory": "21/alpine3.17"
+    "directory": "21/alpine3.18"
   },
   {
-    "variant": "21.7.3",
+    "nodeVersion": "21.7.3",
+    "variant": "8.15-node21-alpine",
     "tags": [
       "8.15-node21-alpine",
       "8.15-node21-alpine3.19",
@@ -43,7 +45,8 @@
     "directory": "21/alpine3.19"
   },
   {
-    "variant": "21.7.3",
+    "nodeVersion": "21.7.3",
+    "variant": "8.15-node21",
     "tags": [
       "8.15-node21",
       "8.15-node21-bookworm",
@@ -69,7 +72,8 @@
     "directory": "21/bookworm"
   },
   {
-    "variant": "21.7.3",
+    "nodeVersion": "21.7.3",
+    "variant": "8.15-node21-bookworm-slim",
     "tags": [
       "8.15-node21-bookworm-slim",
       "8.15-node21-slim",
@@ -92,7 +96,8 @@
     "directory": "21/bookworm-slim"
   },
   {
-    "variant": "21.7.3",
+    "nodeVersion": "21.7.3",
+    "variant": "8.15-node21-bullseye",
     "tags": [
       "8.15-node21-bullseye",
       "8.15-node21.7-bullseye",
@@ -110,7 +115,8 @@
     "directory": "21/bullseye"
   },
   {
-    "variant": "21.7.3",
+    "nodeVersion": "21.7.3",
+    "variant": "8.15-node21-bullseye-slim",
     "tags": [
       "8.15-node21-bullseye-slim",
       "8.15-node21.7-bullseye-slim",
@@ -128,13 +134,14 @@
     "directory": "21/bullseye-slim"
   },
   {
-    "variant": "20.12.2",
+    "nodeVersion": "20.12.2",
+    "variant": "8.15-node20-alpine3.18",
     "tags": [
-      "8.15-node20-alpine3.17",
-      "8.15-node20.12-alpine3.17",
-      "8.15-node20.12.2-alpine3.17",
-      "iron-alpine3.17",
-      "lts-alpine3.17"
+      "8.15-node20-alpine3.18",
+      "8.15-node20.12-alpine3.18",
+      "8.15-node20.12.2-alpine3.18",
+      "iron-alpine3.18",
+      "lts-alpine3.18"
     ],
     "architectures": [
       "amd64",
@@ -144,10 +151,11 @@
       "ppc64le",
       "s390x"
     ],
-    "directory": "20/alpine3.17"
+    "directory": "20/alpine3.18"
   },
   {
-    "variant": "20.12.2",
+    "nodeVersion": "20.12.2",
+    "variant": "8.15-node20-alpine",
     "tags": [
       "8.15-node20-alpine",
       "8.15-node20-alpine3.19",
@@ -171,7 +179,8 @@
     "directory": "20/alpine3.19"
   },
   {
-    "variant": "20.12.2",
+    "nodeVersion": "20.12.2",
+    "variant": "8.15-node20",
     "tags": [
       "8.15-node20",
       "8.15-node20-bookworm",
@@ -195,7 +204,8 @@
     "directory": "20/bookworm"
   },
   {
-    "variant": "20.12.2",
+    "nodeVersion": "20.12.2",
+    "variant": "8.15-node20-bookworm-slim",
     "tags": [
       "8.15-node20-bookworm-slim",
       "8.15-node20-slim",
@@ -218,7 +228,8 @@
     "directory": "20/bookworm-slim"
   },
   {
-    "variant": "20.12.2",
+    "nodeVersion": "20.12.2",
+    "variant": "8.15-node20-bullseye",
     "tags": [
       "8.15-node20-bullseye",
       "8.15-node20.12-bullseye",
@@ -236,7 +247,8 @@
     "directory": "20/bullseye"
   },
   {
-    "variant": "20.12.2",
+    "nodeVersion": "20.12.2",
+    "variant": "8.15-node20-bullseye-slim",
     "tags": [
       "8.15-node20-bullseye-slim",
       "8.15-node20.12-bullseye-slim",
@@ -254,7 +266,8 @@
     "directory": "20/bullseye-slim"
   },
   {
-    "variant": "20.12.2",
+    "nodeVersion": "20.12.2",
+    "variant": "8.15-node20-buster",
     "tags": [
       "8.15-node20-buster",
       "8.15-node20.12-buster",
@@ -270,7 +283,8 @@
     "directory": "20/buster"
   },
   {
-    "variant": "20.12.2",
+    "nodeVersion": "20.12.2",
+    "variant": "8.15-node20-buster-slim",
     "tags": [
       "8.15-node20-buster-slim",
       "8.15-node20.12-buster-slim",
@@ -286,12 +300,13 @@
     "directory": "20/buster-slim"
   },
   {
-    "variant": "18.20.2",
+    "nodeVersion": "18.20.2",
+    "variant": "8.15-node18-alpine3.18",
     "tags": [
-      "8.15-node18-alpine3.17",
-      "8.15-node18.20-alpine3.17",
-      "8.15-node18.20.2-alpine3.17",
-      "hydrogen-alpine3.17"
+      "8.15-node18-alpine3.18",
+      "8.15-node18.20-alpine3.18",
+      "8.15-node18.20.2-alpine3.18",
+      "hydrogen-alpine3.18"
     ],
     "architectures": [
       "amd64",
@@ -301,10 +316,11 @@
       "ppc64le",
       "s390x"
     ],
-    "directory": "18/alpine3.17"
+    "directory": "18/alpine3.18"
   },
   {
-    "variant": "18.20.2",
+    "nodeVersion": "18.20.2",
+    "variant": "8.15-node18-alpine",
     "tags": [
       "8.15-node18-alpine",
       "8.15-node18-alpine3.19",
@@ -326,7 +342,8 @@
     "directory": "18/alpine3.19"
   },
   {
-    "variant": "18.20.2",
+    "nodeVersion": "18.20.2",
+    "variant": "8.15-node18",
     "tags": [
       "8.15-node18",
       "8.15-node18-bookworm",
@@ -347,7 +364,8 @@
     "directory": "18/bookworm"
   },
   {
-    "variant": "18.20.2",
+    "nodeVersion": "18.20.2",
+    "variant": "8.15-node18-bookworm-slim",
     "tags": [
       "8.15-node18-bookworm-slim",
       "8.15-node18-slim",
@@ -368,7 +386,8 @@
     "directory": "18/bookworm-slim"
   },
   {
-    "variant": "18.20.2",
+    "nodeVersion": "18.20.2",
+    "variant": "8.15-node18-bullseye",
     "tags": [
       "8.15-node18-bullseye",
       "8.15-node18.20-bullseye",
@@ -385,7 +404,8 @@
     "directory": "18/bullseye"
   },
   {
-    "variant": "18.20.2",
+    "nodeVersion": "18.20.2",
+    "variant": "8.15-node18-bullseye-slim",
     "tags": [
       "8.15-node18-bullseye-slim",
       "8.15-node18.20-bullseye-slim",
@@ -402,7 +422,8 @@
     "directory": "18/bullseye-slim"
   },
   {
-    "variant": "18.20.2",
+    "nodeVersion": "18.20.2",
+    "variant": "8.15-node18-buster",
     "tags": [
       "8.15-node18-buster",
       "8.15-node18.20-buster",
@@ -417,7 +438,8 @@
     "directory": "18/buster"
   },
   {
-    "variant": "18.20.2",
+    "nodeVersion": "18.20.2",
+    "variant": "8.15-node18-buster-slim",
     "tags": [
       "8.15-node18-buster-slim",
       "8.15-node18.20-buster-slim",
