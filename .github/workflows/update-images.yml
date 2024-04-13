@@ -38,7 +38,7 @@ jobs:
           NODE_NO_WARNINGS: 1
         run: |
           {
-            echo 'JSON_RESPONSE<<EOF'
+            echo 'variants<<EOF'
             node index.mjs
             echo EOF
           } >> "$GITHUB_ENV"
