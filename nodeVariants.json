@@ -1,7 +1,7 @@
 [
   {
     "nodeVersion": "21.7.3",
-    "variant": "8.15-node21-alpine3.18",
+    "variant": "21-alpine3.18",
     "tags": [
       "srbarba/pnpm:8.15-node21-alpine3.18",
       "srbarba/pnpm:8.15-node21.7-alpine3.18",
@@ -21,7 +21,7 @@
   },
   {
     "nodeVersion": "21.7.3",
-    "variant": "8.15-node21-alpine",
+    "variant": "21-alpine",
     "tags": [
       "srbarba/pnpm:8.15-node21-alpine",
       "srbarba/pnpm:8.15-node21-alpine3.19",
@@ -46,7 +46,7 @@
   },
   {
     "nodeVersion": "21.7.3",
-    "variant": "8.15-node21",
+    "variant": "21",
     "tags": [
       "srbarba/pnpm:8.15-node21",
       "srbarba/pnpm:8.15-node21-bookworm",
@@ -73,7 +73,7 @@
   },
   {
     "nodeVersion": "21.7.3",
-    "variant": "8.15-node21-bookworm-slim",
+    "variant": "21-bookworm-slim",
     "tags": [
       "srbarba/pnpm:8.15-node21-bookworm-slim",
       "srbarba/pnpm:8.15-node21-slim",
@@ -97,7 +97,7 @@
   },
   {
     "nodeVersion": "21.7.3",
-    "variant": "8.15-node21-bullseye",
+    "variant": "21-bullseye",
     "tags": [
       "srbarba/pnpm:8.15-node21-bullseye",
       "srbarba/pnpm:8.15-node21.7-bullseye",
@@ -116,7 +116,7 @@
   },
   {
     "nodeVersion": "21.7.3",
-    "variant": "8.15-node21-bullseye-slim",
+    "variant": "21-bullseye-slim",
     "tags": [
       "srbarba/pnpm:8.15-node21-bullseye-slim",
       "srbarba/pnpm:8.15-node21.7-bullseye-slim",
@@ -135,7 +135,7 @@
   },
   {
     "nodeVersion": "20.12.2",
-    "variant": "8.15-node20-alpine3.18",
+    "variant": "20-alpine3.18",
     "tags": [
       "srbarba/pnpm:8.15-node20-alpine3.18",
       "srbarba/pnpm:8.15-node20.12-alpine3.18",
@@ -155,7 +155,7 @@
   },
   {
     "nodeVersion": "20.12.2",
-    "variant": "8.15-node20-alpine",
+    "variant": "20-alpine",
     "tags": [
       "srbarba/pnpm:8.15-node20-alpine",
       "srbarba/pnpm:8.15-node20-alpine3.19",
@@ -180,7 +180,7 @@
   },
   {
     "nodeVersion": "20.12.2",
-    "variant": "8.15-node20",
+    "variant": "20",
     "tags": [
       "srbarba/pnpm:8.15-node20",
       "srbarba/pnpm:8.15-node20-bookworm",
@@ -205,7 +205,7 @@
   },
   {
     "nodeVersion": "20.12.2",
-    "variant": "8.15-node20-bookworm-slim",
+    "variant": "20-bookworm-slim",
     "tags": [
       "srbarba/pnpm:8.15-node20-bookworm-slim",
       "srbarba/pnpm:8.15-node20-slim",
@@ -229,7 +229,7 @@
   },
   {
     "nodeVersion": "20.12.2",
-    "variant": "8.15-node20-bullseye",
+    "variant": "20-bullseye",
     "tags": [
       "srbarba/pnpm:8.15-node20-bullseye",
       "srbarba/pnpm:8.15-node20.12-bullseye",
@@ -248,7 +248,7 @@
   },
   {
     "nodeVersion": "20.12.2",
-    "variant": "8.15-node20-bullseye-slim",
+    "variant": "20-bullseye-slim",
     "tags": [
       "srbarba/pnpm:8.15-node20-bullseye-slim",
       "srbarba/pnpm:8.15-node20.12-bullseye-slim",
@@ -267,7 +267,7 @@
   },
   {
     "nodeVersion": "20.12.2",
-    "variant": "8.15-node20-buster",
+    "variant": "20-buster",
     "tags": [
       "srbarba/pnpm:8.15-node20-buster",
       "srbarba/pnpm:8.15-node20.12-buster",
@@ -284,7 +284,7 @@
   },
   {
     "nodeVersion": "20.12.2",
-    "variant": "8.15-node20-buster-slim",
+    "variant": "20-buster-slim",
     "tags": [
       "srbarba/pnpm:8.15-node20-buster-slim",
       "srbarba/pnpm:8.15-node20.12-buster-slim",
@@ -301,7 +301,7 @@
   },
   {
     "nodeVersion": "18.20.2",
-    "variant": "8.15-node18-alpine3.18",
+    "variant": "18-alpine3.18",
     "tags": [
       "srbarba/pnpm:8.15-node18-alpine3.18",
       "srbarba/pnpm:8.15-node18.20-alpine3.18",
@@ -320,7 +320,7 @@
   },
   {
     "nodeVersion": "18.20.2",
-    "variant": "8.15-node18-alpine",
+    "variant": "18-alpine",
     "tags": [
       "srbarba/pnpm:8.15-node18-alpine",
       "srbarba/pnpm:8.15-node18-alpine3.19",
@@ -343,7 +343,7 @@
   },
   {
     "nodeVersion": "18.20.2",
-    "variant": "8.15-node18",
+    "variant": "18",
     "tags": [
       "srbarba/pnpm:8.15-node18",
       "srbarba/pnpm:8.15-node18-bookworm",
@@ -365,7 +365,7 @@
   },
   {
     "nodeVersion": "18.20.2",
-    "variant": "8.15-node18-bookworm-slim",
+    "variant": "18-bookworm-slim",
     "tags": [
       "srbarba/pnpm:8.15-node18-bookworm-slim",
       "srbarba/pnpm:8.15-node18-slim",
@@ -387,7 +387,7 @@
   },
   {
     "nodeVersion": "18.20.2",
-    "variant": "8.15-node18-bullseye",
+    "variant": "18-bullseye",
     "tags": [
       "srbarba/pnpm:8.15-node18-bullseye",
       "srbarba/pnpm:8.15-node18.20-bullseye",
@@ -405,7 +405,7 @@
   },
   {
     "nodeVersion": "18.20.2",
-    "variant": "8.15-node18-bullseye-slim",
+    "variant": "18-bullseye-slim",
     "tags": [
       "srbarba/pnpm:8.15-node18-bullseye-slim",
       "srbarba/pnpm:8.15-node18.20-bullseye-slim",
@@ -423,7 +423,7 @@
   },
   {
     "nodeVersion": "18.20.2",
-    "variant": "8.15-node18-buster",
+    "variant": "18-buster",
     "tags": [
       "srbarba/pnpm:8.15-node18-buster",
       "srbarba/pnpm:8.15-node18.20-buster",
@@ -439,7 +439,7 @@
   },
   {
     "nodeVersion": "18.20.2",
-    "variant": "8.15-node18-buster-slim",
+    "variant": "18-buster-slim",
     "tags": [
       "srbarba/pnpm:8.15-node18-buster-slim",
       "srbarba/pnpm:8.15-node18.20-buster-slim",
