@@ -68,23 +68,26 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v1
+        uses: docker/setup-buildx-action@v3
 
       - name: Build and test Docker images
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v5
         with:
           context: .
           file: ./Dockerfile
           push: false
+          args: |
+            NODE_VERSION=${{ matrix.variant.nodeVersion }}
           tags: "srbarba/pnpm:${{ matrix.variant.tags[0] }}-test"
           load: true # Important for testing the image in subsequent steps
 
       - name: Test Docker image
         run: |
+          docker run --rm "srbarba/pnpm:${{ matrix.variant.tags[0] }}-test" node -v
           docker run --rm "srbarba/pnpm:${{ matrix.variant.tags[0] }}-test" pnpm -v
 
       - name: Push Docker image if tests pass
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v5
         with:
           context: .
           file: ./Dockerfile

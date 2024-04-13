@@ -170,7 +170,8 @@ export async function getNodeVariants(dir) {
 
       let directory = `${version}/${variant}`;
       versionsTags.push({
-        variant: `${fullversion.groups.major}.${fullversion.groups.minor}.${fullversion.groups.patch}`,
+        nodeVersion: `${fullversion.groups.major}.${fullversion.groups.minor}.${fullversion.groups.patch}`,
+        variant: tags[0],
         tags,
         architectures: config[version].variants[variant],
         directory,
