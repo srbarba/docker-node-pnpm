@@ -3,6 +3,12 @@
   "extends": ["config:base"],
   "packageRules": [
     {
+      "matchPackageNames": ["pnpm"],
+      "matchUpdateTypes": ["major", "minor", "patch"],
+      "automerge": true,
+      "automergeType": "branch"
+    },
+    {
       "matchDatasources": ["docker"],
       "matchUpdateTypes": ["minor", "patch"],
       "dependencyDashboard": true,
@@ -24,6 +30,15 @@
       ],
       "datasourceTemplate": "docker",
       "versioningTemplate": "docker"
+    },
+    {
+      "fileMatch": ["getNodeVariants\\.mjs$"],
+      "matchStrings": [
+        "const pnpmVersion = '(?<currentValue>\\d+\\.\\d+\\.\\d+)'"
+      ],
+      "datasource": "npm",
+      "depNameTemplate": "pnpm",
+      "versioning": "semver"
     }
   ]
 }

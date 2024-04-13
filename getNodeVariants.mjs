@@ -1,6 +1,9 @@
 import fs from "fs";
 import path from "path";
 
+const pnpmVersion = "8.15.6";
+const [pnpmMajor, pnpmMinor, pnpmPatch] = pnpmVersion.split(".");
+
 export async function getNodeVariants(dir) {
   const versionsTags = [];
 
@@ -153,11 +156,22 @@ export async function getNodeVariants(dir) {
       // remove duplicates
       tags = tags.filter((x, i, a) => a.indexOf(x) == i);
       tags = tags.sort();
+      tags = tags.map((tag) => {
+        if (isNaN(Number(tag[0]))) {
+          return tag;
+        }
+        return `${pnpmMajor}.${pnpmMinor}-node${tag}`;
+      });
+      if (tags.includes("latest")) {
+        tags.push(`${pnpmMajor}`);
+        tags.push(`${pnpmMajor}.${pnpmMinor}`);
+        tags.push(`${pnpmMajor}.${pnpmMinor}.${pnpmPatch}`);
+      }
 
       let directory = `${version}/${variant}`;
       versionsTags.push({
-        variant: tags[0],
-        tags: tags,
+        variant: `${fullversion.groups.major}.${fullversion.groups.minor}.${fullversion.groups.patch}`,
+        tags,
         architectures: config[version].variants[variant],
         directory,
       });

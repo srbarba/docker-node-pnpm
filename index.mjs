@@ -33,3 +33,5 @@ function getNeedsToUpdateVariants(newVariants, oldVariants) {
 function variantNeedsToUpdate(newVariant, oldVariant) {
   return newVariant.tags.reduce((acc, tag) => acc || !oldVariant.tags.includes(tag), false)
 }
+
+getNodeVariantsToUpdate()

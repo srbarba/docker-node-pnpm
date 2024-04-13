@@ -1,10 +1,10 @@
 [
   {
-    "variant": "21-alpine3.18",
+    "variant": "21.7.3",
     "tags": [
-      "21-alpine3.18",
-      "21.7-alpine3.18",
-      "21.7.3-alpine3.18",
+      "8.15-node21-alpine3.18",
+      "8.15-node21.7-alpine3.18",
+      "8.15-node21.7.3-alpine3.18",
       "alpine3.18",
       "current-alpine3.18"
     ],
@@ -19,14 +19,14 @@
     "directory": "21/alpine3.18"
   },
   {
-    "variant": "21-alpine",
+    "variant": "21.7.3",
     "tags": [
-      "21-alpine",
-      "21-alpine3.19",
-      "21.7-alpine",
-      "21.7-alpine3.19",
-      "21.7.3-alpine",
-      "21.7.3-alpine3.19",
+      "8.15-node21-alpine",
+      "8.15-node21-alpine3.19",
+      "8.15-node21.7-alpine",
+      "8.15-node21.7-alpine3.19",
+      "8.15-node21.7.3-alpine",
+      "8.15-node21.7.3-alpine3.19",
       "alpine",
       "alpine3.19",
       "current-alpine",
@@ -43,18 +43,21 @@
     "directory": "21/alpine3.19"
   },
   {
-    "variant": "21",
+    "variant": "21.7.3",
     "tags": [
-      "21",
-      "21-bookworm",
-      "21.7",
-      "21.7-bookworm",
-      "21.7.3",
-      "21.7.3-bookworm",
+      "8.15-node21",
+      "8.15-node21-bookworm",
+      "8.15-node21.7",
+      "8.15-node21.7-bookworm",
+      "8.15-node21.7.3",
+      "8.15-node21.7.3-bookworm",
       "bookworm",
       "current",
       "current-bookworm",
-      "latest"
+      "latest",
+      "8",
+      "8.15",
+      "8.15.6"
     ],
     "architectures": [
       "amd64",
@@ -66,14 +69,14 @@
     "directory": "21/bookworm"
   },
   {
-    "variant": "21-bookworm-slim",
+    "variant": "21.7.3",
     "tags": [
-      "21-bookworm-slim",
-      "21-slim",
-      "21.7-bookworm-slim",
-      "21.7-slim",
-      "21.7.3-bookworm-slim",
-      "21.7.3-slim",
+      "8.15-node21-bookworm-slim",
+      "8.15-node21-slim",
+      "8.15-node21.7-bookworm-slim",
+      "8.15-node21.7-slim",
+      "8.15-node21.7.3-bookworm-slim",
+      "8.15-node21.7.3-slim",
       "bookworm-slim",
       "current-bookworm-slim",
       "current-slim",
@@ -89,11 +92,11 @@
     "directory": "21/bookworm-slim"
   },
   {
-    "variant": "21-bullseye",
+    "variant": "21.7.3",
     "tags": [
-      "21-bullseye",
-      "21.7-bullseye",
-      "21.7.3-bullseye",
+      "8.15-node21-bullseye",
+      "8.15-node21.7-bullseye",
+      "8.15-node21.7.3-bullseye",
       "bullseye",
       "current-bullseye"
     ],
@@ -107,11 +110,11 @@
     "directory": "21/bullseye"
   },
   {
-    "variant": "21-bullseye-slim",
+    "variant": "21.7.3",
     "tags": [
-      "21-bullseye-slim",
-      "21.7-bullseye-slim",
-      "21.7.3-bullseye-slim",
+      "8.15-node21-bullseye-slim",
+      "8.15-node21.7-bullseye-slim",
+      "8.15-node21.7.3-bullseye-slim",
       "bullseye-slim",
       "current-bullseye-slim"
     ],
@@ -125,11 +128,11 @@
     "directory": "21/bullseye-slim"
   },
   {
-    "variant": "20-alpine3.18",
+    "variant": "20.12.2",
     "tags": [
-      "20-alpine3.18",
-      "20.12-alpine3.18",
-      "20.12.2-alpine3.18",
+      "8.15-node20-alpine3.18",
+      "8.15-node20.12-alpine3.18",
+      "8.15-node20.12.2-alpine3.18",
       "iron-alpine3.18",
       "lts-alpine3.18"
     ],
@@ -144,14 +147,14 @@
     "directory": "20/alpine3.18"
   },
   {
-    "variant": "20-alpine",
+    "variant": "20.12.2",
     "tags": [
-      "20-alpine",
-      "20-alpine3.19",
-      "20.12-alpine",
-      "20.12-alpine3.19",
-      "20.12.2-alpine",
-      "20.12.2-alpine3.19",
+      "8.15-node20-alpine",
+      "8.15-node20-alpine3.19",
+      "8.15-node20.12-alpine",
+      "8.15-node20.12-alpine3.19",
+      "8.15-node20.12.2-alpine",
+      "8.15-node20.12.2-alpine3.19",
       "iron-alpine",
       "iron-alpine3.19",
       "lts-alpine",
@@ -168,14 +171,14 @@
     "directory": "20/alpine3.19"
   },
   {
-    "variant": "20",
+    "variant": "20.12.2",
     "tags": [
-      "20",
-      "20-bookworm",
-      "20.12",
-      "20.12-bookworm",
-      "20.12.2",
-      "20.12.2-bookworm",
+      "8.15-node20",
+      "8.15-node20-bookworm",
+      "8.15-node20.12",
+      "8.15-node20.12-bookworm",
+      "8.15-node20.12.2",
+      "8.15-node20.12.2-bookworm",
       "iron",
       "iron-bookworm",
       "lts",
@@ -192,14 +195,14 @@
     "directory": "20/bookworm"
   },
   {
-    "variant": "20-bookworm-slim",
+    "variant": "20.12.2",
     "tags": [
-      "20-bookworm-slim",
-      "20-slim",
-      "20.12-bookworm-slim",
-      "20.12-slim",
-      "20.12.2-bookworm-slim",
-      "20.12.2-slim",
+      "8.15-node20-bookworm-slim",
+      "8.15-node20-slim",
+      "8.15-node20.12-bookworm-slim",
+      "8.15-node20.12-slim",
+      "8.15-node20.12.2-bookworm-slim",
+      "8.15-node20.12.2-slim",
       "iron-bookworm-slim",
       "iron-slim",
       "lts-bookworm-slim",
@@ -215,11 +218,11 @@
     "directory": "20/bookworm-slim"
   },
   {
-    "variant": "20-bullseye",
+    "variant": "20.12.2",
     "tags": [
-      "20-bullseye",
-      "20.12-bullseye",
-      "20.12.2-bullseye",
+      "8.15-node20-bullseye",
+      "8.15-node20.12-bullseye",
+      "8.15-node20.12.2-bullseye",
       "iron-bullseye",
       "lts-bullseye"
     ],
@@ -233,11 +236,11 @@
     "directory": "20/bullseye"
   },
   {
-    "variant": "20-bullseye-slim",
+    "variant": "20.12.2",
     "tags": [
-      "20-bullseye-slim",
-      "20.12-bullseye-slim",
-      "20.12.2-bullseye-slim",
+      "8.15-node20-bullseye-slim",
+      "8.15-node20.12-bullseye-slim",
+      "8.15-node20.12.2-bullseye-slim",
       "iron-bullseye-slim",
       "lts-bullseye-slim"
     ],
@@ -251,11 +254,11 @@
     "directory": "20/bullseye-slim"
   },
   {
-    "variant": "20-buster",
+    "variant": "20.12.2",
     "tags": [
-      "20-buster",
-      "20.12-buster",
-      "20.12.2-buster",
+      "8.15-node20-buster",
+      "8.15-node20.12-buster",
+      "8.15-node20.12.2-buster",
       "iron-buster",
       "lts-buster"
     ],
@@ -267,11 +270,11 @@
     "directory": "20/buster"
   },
   {
-    "variant": "20-buster-slim",
+    "variant": "20.12.2",
     "tags": [
-      "20-buster-slim",
-      "20.12-buster-slim",
-      "20.12.2-buster-slim",
+      "8.15-node20-buster-slim",
+      "8.15-node20.12-buster-slim",
+      "8.15-node20.12.2-buster-slim",
       "iron-buster-slim",
       "lts-buster-slim"
     ],
@@ -283,11 +286,11 @@
     "directory": "20/buster-slim"
   },
   {
-    "variant": "18-alpine3.18",
+    "variant": "18.20.2",
     "tags": [
-      "18-alpine3.18",
-      "18.20-alpine3.18",
-      "18.20.2-alpine3.18",
+      "8.15-node18-alpine3.18",
+      "8.15-node18.20-alpine3.18",
+      "8.15-node18.20.2-alpine3.18",
       "hydrogen-alpine3.18"
     ],
     "architectures": [
@@ -301,14 +304,14 @@
     "directory": "18/alpine3.18"
   },
   {
-    "variant": "18-alpine",
+    "variant": "18.20.2",
     "tags": [
-      "18-alpine",
-      "18-alpine3.19",
-      "18.20-alpine",
-      "18.20-alpine3.19",
-      "18.20.2-alpine",
-      "18.20.2-alpine3.19",
+      "8.15-node18-alpine",
+      "8.15-node18-alpine3.19",
+      "8.15-node18.20-alpine",
+      "8.15-node18.20-alpine3.19",
+      "8.15-node18.20.2-alpine",
+      "8.15-node18.20.2-alpine3.19",
       "hydrogen-alpine",
       "hydrogen-alpine3.19"
     ],
@@ -323,14 +326,14 @@
     "directory": "18/alpine3.19"
   },
   {
-    "variant": "18",
+    "variant": "18.20.2",
     "tags": [
-      "18",
-      "18-bookworm",
-      "18.20",
-      "18.20-bookworm",
-      "18.20.2",
-      "18.20.2-bookworm",
+      "8.15-node18",
+      "8.15-node18-bookworm",
+      "8.15-node18.20",
+      "8.15-node18.20-bookworm",
+      "8.15-node18.20.2",
+      "8.15-node18.20.2-bookworm",
       "hydrogen",
       "hydrogen-bookworm"
     ],
@@ -344,14 +347,14 @@
     "directory": "18/bookworm"
   },
   {
-    "variant": "18-bookworm-slim",
+    "variant": "18.20.2",
     "tags": [
-      "18-bookworm-slim",
-      "18-slim",
-      "18.20-bookworm-slim",
-      "18.20-slim",
-      "18.20.2-bookworm-slim",
-      "18.20.2-slim",
+      "8.15-node18-bookworm-slim",
+      "8.15-node18-slim",
+      "8.15-node18.20-bookworm-slim",
+      "8.15-node18.20-slim",
+      "8.15-node18.20.2-bookworm-slim",
+      "8.15-node18.20.2-slim",
       "hydrogen-bookworm-slim",
       "hydrogen-slim"
     ],
@@ -365,11 +368,11 @@
     "directory": "18/bookworm-slim"
   },
   {
-    "variant": "18-bullseye",
+    "variant": "18.20.2",
     "tags": [
-      "18-bullseye",
-      "18.20-bullseye",
-      "18.20.2-bullseye",
+      "8.15-node18-bullseye",
+      "8.15-node18.20-bullseye",
+      "8.15-node18.20.2-bullseye",
       "hydrogen-bullseye"
     ],
     "architectures": [
@@ -382,11 +385,11 @@
     "directory": "18/bullseye"
   },
   {
-    "variant": "18-bullseye-slim",
+    "variant": "18.20.2",
     "tags": [
-      "18-bullseye-slim",
-      "18.20-bullseye-slim",
-      "18.20.2-bullseye-slim",
+      "8.15-node18-bullseye-slim",
+      "8.15-node18.20-bullseye-slim",
+      "8.15-node18.20.2-bullseye-slim",
       "hydrogen-bullseye-slim"
     ],
     "architectures": [
@@ -399,11 +402,11 @@
     "directory": "18/bullseye-slim"
   },
   {
-    "variant": "18-buster",
+    "variant": "18.20.2",
     "tags": [
-      "18-buster",
-      "18.20-buster",
-      "18.20.2-buster",
+      "8.15-node18-buster",
+      "8.15-node18.20-buster",
+      "8.15-node18.20.2-buster",
       "hydrogen-buster"
     ],
     "architectures": [
@@ -414,11 +417,11 @@
     "directory": "18/buster"
   },
   {
-    "variant": "18-buster-slim",
+    "variant": "18.20.2",
     "tags": [
-      "18-buster-slim",
-      "18.20-buster-slim",
-      "18.20.2-buster-slim",
+      "8.15-node18-buster-slim",
+      "8.15-node18.20-buster-slim",
+      "8.15-node18.20.2-buster-slim",
       "hydrogen-buster-slim"
     ],
     "architectures": [
