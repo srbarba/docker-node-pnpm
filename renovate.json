@@ -36,9 +36,8 @@
       "matchStrings": [
         "const pnpmVersion = '(?<currentValue>\\d+\\.\\d+\\.\\d+)'"
       ],
-      "datasource": "npm",
-      "depNameTemplate": "pnpm",
-      "versioning": "semver"
+      "datasourceTemplate": "npm",
+      "depNameTemplate": "pnpm"
     }
   ]
 }

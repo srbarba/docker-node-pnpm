@@ -1,13 +1,13 @@
 [
   {
     "nodeVersion": "21.7.3",
-    "variant": "8.15-node21-alpine3.18",
+    "variant": "srbarba/pnpm:8.15-node21-alpine3.18",
     "tags": [
-      "8.15-node21-alpine3.18",
-      "8.15-node21.7-alpine3.18",
-      "8.15-node21.7.3-alpine3.18",
-      "alpine3.18",
-      "current-alpine3.18"
+      "srbarba/pnpm:8.15-node21-alpine3.18",
+      "srbarba/pnpm:8.15-node21.7-alpine3.18",
+      "srbarba/pnpm:8.15-node21.7.3-alpine3.18",
+      "srbarba/pnpm:alpine3.18",
+      "srbarba/pnpm:current-alpine3.18"
     ],
     "architectures": [
       "amd64",
@@ -21,18 +21,18 @@
   },
   {
     "nodeVersion": "21.7.3",
-    "variant": "8.15-node21-alpine",
+    "variant": "srbarba/pnpm:8.15-node21-alpine",
     "tags": [
-      "8.15-node21-alpine",
-      "8.15-node21-alpine3.19",
-      "8.15-node21.7-alpine",
-      "8.15-node21.7-alpine3.19",
-      "8.15-node21.7.3-alpine",
-      "8.15-node21.7.3-alpine3.19",
-      "alpine",
-      "alpine3.19",
-      "current-alpine",
-      "current-alpine3.19"
+      "srbarba/pnpm:8.15-node21-alpine",
+      "srbarba/pnpm:8.15-node21-alpine3.19",
+      "srbarba/pnpm:8.15-node21.7-alpine",
+      "srbarba/pnpm:8.15-node21.7-alpine3.19",
+      "srbarba/pnpm:8.15-node21.7.3-alpine",
+      "srbarba/pnpm:8.15-node21.7.3-alpine3.19",
+      "srbarba/pnpm:alpine",
+      "srbarba/pnpm:alpine3.19",
+      "srbarba/pnpm:current-alpine",
+      "srbarba/pnpm:current-alpine3.19"
     ],
     "architectures": [
       "amd64",
@@ -46,21 +46,21 @@
   },
   {
     "nodeVersion": "21.7.3",
-    "variant": "8.15-node21",
+    "variant": "srbarba/pnpm:8.15-node21",
     "tags": [
-      "8.15-node21",
-      "8.15-node21-bookworm",
-      "8.15-node21.7",
-      "8.15-node21.7-bookworm",
-      "8.15-node21.7.3",
-      "8.15-node21.7.3-bookworm",
-      "bookworm",
-      "current",
-      "current-bookworm",
-      "latest",
-      "8",
-      "8.15",
-      "8.15.6"
+      "srbarba/pnpm:8.15-node21",
+      "srbarba/pnpm:8.15-node21-bookworm",
+      "srbarba/pnpm:8.15-node21.7",
+      "srbarba/pnpm:8.15-node21.7-bookworm",
+      "srbarba/pnpm:8.15-node21.7.3",
+      "srbarba/pnpm:8.15-node21.7.3-bookworm",
+      "srbarba/pnpm:bookworm",
+      "srbarba/pnpm:current",
+      "srbarba/pnpm:current-bookworm",
+      "srbarba/pnpm:latest",
+      "srbarba/pnpm:8",
+      "srbarba/pnpm:8.15",
+      "srbarba/pnpm:8.15.6"
     ],
     "architectures": [
       "amd64",
@@ -73,18 +73,18 @@
   },
   {
     "nodeVersion": "21.7.3",
-    "variant": "8.15-node21-bookworm-slim",
+    "variant": "srbarba/pnpm:8.15-node21-bookworm-slim",
     "tags": [
-      "8.15-node21-bookworm-slim",
-      "8.15-node21-slim",
-      "8.15-node21.7-bookworm-slim",
-      "8.15-node21.7-slim",
-      "8.15-node21.7.3-bookworm-slim",
-      "8.15-node21.7.3-slim",
-      "bookworm-slim",
-      "current-bookworm-slim",
-      "current-slim",
-      "slim"
+      "srbarba/pnpm:8.15-node21-bookworm-slim",
+      "srbarba/pnpm:8.15-node21-slim",
+      "srbarba/pnpm:8.15-node21.7-bookworm-slim",
+      "srbarba/pnpm:8.15-node21.7-slim",
+      "srbarba/pnpm:8.15-node21.7.3-bookworm-slim",
+      "srbarba/pnpm:8.15-node21.7.3-slim",
+      "srbarba/pnpm:bookworm-slim",
+      "srbarba/pnpm:current-bookworm-slim",
+      "srbarba/pnpm:current-slim",
+      "srbarba/pnpm:slim"
     ],
     "architectures": [
       "amd64",
@@ -97,13 +97,13 @@
   },
   {
     "nodeVersion": "21.7.3",
-    "variant": "8.15-node21-bullseye",
+    "variant": "srbarba/pnpm:8.15-node21-bullseye",
     "tags": [
-      "8.15-node21-bullseye",
-      "8.15-node21.7-bullseye",
-      "8.15-node21.7.3-bullseye",
-      "bullseye",
-      "current-bullseye"
+      "srbarba/pnpm:8.15-node21-bullseye",
+      "srbarba/pnpm:8.15-node21.7-bullseye",
+      "srbarba/pnpm:8.15-node21.7.3-bullseye",
+      "srbarba/pnpm:bullseye",
+      "srbarba/pnpm:current-bullseye"
     ],
     "architectures": [
       "amd64",
@@ -116,13 +116,13 @@
   },
   {
     "nodeVersion": "21.7.3",
-    "variant": "8.15-node21-bullseye-slim",
+    "variant": "srbarba/pnpm:8.15-node21-bullseye-slim",
     "tags": [
-      "8.15-node21-bullseye-slim",
-      "8.15-node21.7-bullseye-slim",
-      "8.15-node21.7.3-bullseye-slim",
-      "bullseye-slim",
-      "current-bullseye-slim"
+      "srbarba/pnpm:8.15-node21-bullseye-slim",
+      "srbarba/pnpm:8.15-node21.7-bullseye-slim",
+      "srbarba/pnpm:8.15-node21.7.3-bullseye-slim",
+      "srbarba/pnpm:bullseye-slim",
+      "srbarba/pnpm:current-bullseye-slim"
     ],
     "architectures": [
       "amd64",
@@ -135,13 +135,13 @@
   },
   {
     "nodeVersion": "20.12.2",
-    "variant": "8.15-node20-alpine3.18",
+    "variant": "srbarba/pnpm:8.15-node20-alpine3.18",
     "tags": [
-      "8.15-node20-alpine3.18",
-      "8.15-node20.12-alpine3.18",
-      "8.15-node20.12.2-alpine3.18",
-      "iron-alpine3.18",
-      "lts-alpine3.18"
+      "srbarba/pnpm:8.15-node20-alpine3.18",
+      "srbarba/pnpm:8.15-node20.12-alpine3.18",
+      "srbarba/pnpm:8.15-node20.12.2-alpine3.18",
+      "srbarba/pnpm:iron-alpine3.18",
+      "srbarba/pnpm:lts-alpine3.18"
     ],
     "architectures": [
       "amd64",
@@ -155,18 +155,18 @@
   },
   {
     "nodeVersion": "20.12.2",
-    "variant": "8.15-node20-alpine",
+    "variant": "srbarba/pnpm:8.15-node20-alpine",
     "tags": [
-      "8.15-node20-alpine",
-      "8.15-node20-alpine3.19",
-      "8.15-node20.12-alpine",
-      "8.15-node20.12-alpine3.19",
-      "8.15-node20.12.2-alpine",
-      "8.15-node20.12.2-alpine3.19",
-      "iron-alpine",
-      "iron-alpine3.19",
-      "lts-alpine",
-      "lts-alpine3.19"
+      "srbarba/pnpm:8.15-node20-alpine",
+      "srbarba/pnpm:8.15-node20-alpine3.19",
+      "srbarba/pnpm:8.15-node20.12-alpine",
+      "srbarba/pnpm:8.15-node20.12-alpine3.19",
+      "srbarba/pnpm:8.15-node20.12.2-alpine",
+      "srbarba/pnpm:8.15-node20.12.2-alpine3.19",
+      "srbarba/pnpm:iron-alpine",
+      "srbarba/pnpm:iron-alpine3.19",
+      "srbarba/pnpm:lts-alpine",
+      "srbarba/pnpm:lts-alpine3.19"
     ],
     "architectures": [
       "amd64",
@@ -180,19 +180,19 @@
   },
   {
     "nodeVersion": "20.12.2",
-    "variant": "8.15-node20",
+    "variant": "srbarba/pnpm:8.15-node20",
     "tags": [
-      "8.15-node20",
-      "8.15-node20-bookworm",
-      "8.15-node20.12",
-      "8.15-node20.12-bookworm",
-      "8.15-node20.12.2",
-      "8.15-node20.12.2-bookworm",
-      "iron",
-      "iron-bookworm",
-      "lts",
-      "lts-bookworm",
-      "lts-iron"
+      "srbarba/pnpm:8.15-node20",
+      "srbarba/pnpm:8.15-node20-bookworm",
+      "srbarba/pnpm:8.15-node20.12",
+      "srbarba/pnpm:8.15-node20.12-bookworm",
+      "srbarba/pnpm:8.15-node20.12.2",
+      "srbarba/pnpm:8.15-node20.12.2-bookworm",
+      "srbarba/pnpm:iron",
+      "srbarba/pnpm:iron-bookworm",
+      "srbarba/pnpm:lts",
+      "srbarba/pnpm:lts-bookworm",
+      "srbarba/pnpm:lts-iron"
     ],
     "architectures": [
       "amd64",
@@ -205,18 +205,18 @@
   },
   {
     "nodeVersion": "20.12.2",
-    "variant": "8.15-node20-bookworm-slim",
+    "variant": "srbarba/pnpm:8.15-node20-bookworm-slim",
     "tags": [
-      "8.15-node20-bookworm-slim",
-      "8.15-node20-slim",
-      "8.15-node20.12-bookworm-slim",
-      "8.15-node20.12-slim",
-      "8.15-node20.12.2-bookworm-slim",
-      "8.15-node20.12.2-slim",
-      "iron-bookworm-slim",
-      "iron-slim",
-      "lts-bookworm-slim",
-      "lts-slim"
+      "srbarba/pnpm:8.15-node20-bookworm-slim",
+      "srbarba/pnpm:8.15-node20-slim",
+      "srbarba/pnpm:8.15-node20.12-bookworm-slim",
+      "srbarba/pnpm:8.15-node20.12-slim",
+      "srbarba/pnpm:8.15-node20.12.2-bookworm-slim",
+      "srbarba/pnpm:8.15-node20.12.2-slim",
+      "srbarba/pnpm:iron-bookworm-slim",
+      "srbarba/pnpm:iron-slim",
+      "srbarba/pnpm:lts-bookworm-slim",
+      "srbarba/pnpm:lts-slim"
     ],
     "architectures": [
       "amd64",
@@ -229,13 +229,13 @@
   },
   {
     "nodeVersion": "20.12.2",
-    "variant": "8.15-node20-bullseye",
+    "variant": "srbarba/pnpm:8.15-node20-bullseye",
     "tags": [
-      "8.15-node20-bullseye",
-      "8.15-node20.12-bullseye",
-      "8.15-node20.12.2-bullseye",
-      "iron-bullseye",
-      "lts-bullseye"
+      "srbarba/pnpm:8.15-node20-bullseye",
+      "srbarba/pnpm:8.15-node20.12-bullseye",
+      "srbarba/pnpm:8.15-node20.12.2-bullseye",
+      "srbarba/pnpm:iron-bullseye",
+      "srbarba/pnpm:lts-bullseye"
     ],
     "architectures": [
       "amd64",
@@ -248,13 +248,13 @@
   },
   {
     "nodeVersion": "20.12.2",
-    "variant": "8.15-node20-bullseye-slim",
+    "variant": "srbarba/pnpm:8.15-node20-bullseye-slim",
     "tags": [
-      "8.15-node20-bullseye-slim",
-      "8.15-node20.12-bullseye-slim",
-      "8.15-node20.12.2-bullseye-slim",
-      "iron-bullseye-slim",
-      "lts-bullseye-slim"
+      "srbarba/pnpm:8.15-node20-bullseye-slim",
+      "srbarba/pnpm:8.15-node20.12-bullseye-slim",
+      "srbarba/pnpm:8.15-node20.12.2-bullseye-slim",
+      "srbarba/pnpm:iron-bullseye-slim",
+      "srbarba/pnpm:lts-bullseye-slim"
     ],
     "architectures": [
       "amd64",
@@ -267,13 +267,13 @@
   },
   {
     "nodeVersion": "20.12.2",
-    "variant": "8.15-node20-buster",
+    "variant": "srbarba/pnpm:8.15-node20-buster",
     "tags": [
-      "8.15-node20-buster",
-      "8.15-node20.12-buster",
-      "8.15-node20.12.2-buster",
-      "iron-buster",
-      "lts-buster"
+      "srbarba/pnpm:8.15-node20-buster",
+      "srbarba/pnpm:8.15-node20.12-buster",
+      "srbarba/pnpm:8.15-node20.12.2-buster",
+      "srbarba/pnpm:iron-buster",
+      "srbarba/pnpm:lts-buster"
     ],
     "architectures": [
       "amd64",
@@ -284,13 +284,13 @@
   },
   {
     "nodeVersion": "20.12.2",
-    "variant": "8.15-node20-buster-slim",
+    "variant": "srbarba/pnpm:8.15-node20-buster-slim",
     "tags": [
-      "8.15-node20-buster-slim",
-      "8.15-node20.12-buster-slim",
-      "8.15-node20.12.2-buster-slim",
-      "iron-buster-slim",
-      "lts-buster-slim"
+      "srbarba/pnpm:8.15-node20-buster-slim",
+      "srbarba/pnpm:8.15-node20.12-buster-slim",
+      "srbarba/pnpm:8.15-node20.12.2-buster-slim",
+      "srbarba/pnpm:iron-buster-slim",
+      "srbarba/pnpm:lts-buster-slim"
     ],
     "architectures": [
       "amd64",
@@ -301,12 +301,12 @@
   },
   {
     "nodeVersion": "18.20.2",
-    "variant": "8.15-node18-alpine3.18",
+    "variant": "srbarba/pnpm:8.15-node18-alpine3.18",
     "tags": [
-      "8.15-node18-alpine3.18",
-      "8.15-node18.20-alpine3.18",
-      "8.15-node18.20.2-alpine3.18",
-      "hydrogen-alpine3.18"
+      "srbarba/pnpm:8.15-node18-alpine3.18",
+      "srbarba/pnpm:8.15-node18.20-alpine3.18",
+      "srbarba/pnpm:8.15-node18.20.2-alpine3.18",
+      "srbarba/pnpm:hydrogen-alpine3.18"
     ],
     "architectures": [
       "amd64",
@@ -320,16 +320,16 @@
   },
   {
     "nodeVersion": "18.20.2",
-    "variant": "8.15-node18-alpine",
+    "variant": "srbarba/pnpm:8.15-node18-alpine",
     "tags": [
-      "8.15-node18-alpine",
-      "8.15-node18-alpine3.19",
-      "8.15-node18.20-alpine",
-      "8.15-node18.20-alpine3.19",
-      "8.15-node18.20.2-alpine",
-      "8.15-node18.20.2-alpine3.19",
-      "hydrogen-alpine",
-      "hydrogen-alpine3.19"
+      "srbarba/pnpm:8.15-node18-alpine",
+      "srbarba/pnpm:8.15-node18-alpine3.19",
+      "srbarba/pnpm:8.15-node18.20-alpine",
+      "srbarba/pnpm:8.15-node18.20-alpine3.19",
+      "srbarba/pnpm:8.15-node18.20.2-alpine",
+      "srbarba/pnpm:8.15-node18.20.2-alpine3.19",
+      "srbarba/pnpm:hydrogen-alpine",
+      "srbarba/pnpm:hydrogen-alpine3.19"
     ],
     "architectures": [
       "amd64",
@@ -343,16 +343,16 @@
   },
   {
     "nodeVersion": "18.20.2",
-    "variant": "8.15-node18",
+    "variant": "srbarba/pnpm:8.15-node18",
     "tags": [
-      "8.15-node18",
-      "8.15-node18-bookworm",
-      "8.15-node18.20",
-      "8.15-node18.20-bookworm",
-      "8.15-node18.20.2",
-      "8.15-node18.20.2-bookworm",
-      "hydrogen",
-      "hydrogen-bookworm"
+      "srbarba/pnpm:8.15-node18",
+      "srbarba/pnpm:8.15-node18-bookworm",
+      "srbarba/pnpm:8.15-node18.20",
+      "srbarba/pnpm:8.15-node18.20-bookworm",
+      "srbarba/pnpm:8.15-node18.20.2",
+      "srbarba/pnpm:8.15-node18.20.2-bookworm",
+      "srbarba/pnpm:hydrogen",
+      "srbarba/pnpm:hydrogen-bookworm"
     ],
     "architectures": [
       "amd64",
@@ -365,16 +365,16 @@
   },
   {
     "nodeVersion": "18.20.2",
-    "variant": "8.15-node18-bookworm-slim",
+    "variant": "srbarba/pnpm:8.15-node18-bookworm-slim",
     "tags": [
-      "8.15-node18-bookworm-slim",
-      "8.15-node18-slim",
-      "8.15-node18.20-bookworm-slim",
-      "8.15-node18.20-slim",
-      "8.15-node18.20.2-bookworm-slim",
-      "8.15-node18.20.2-slim",
-      "hydrogen-bookworm-slim",
-      "hydrogen-slim"
+      "srbarba/pnpm:8.15-node18-bookworm-slim",
+      "srbarba/pnpm:8.15-node18-slim",
+      "srbarba/pnpm:8.15-node18.20-bookworm-slim",
+      "srbarba/pnpm:8.15-node18.20-slim",
+      "srbarba/pnpm:8.15-node18.20.2-bookworm-slim",
+      "srbarba/pnpm:8.15-node18.20.2-slim",
+      "srbarba/pnpm:hydrogen-bookworm-slim",
+      "srbarba/pnpm:hydrogen-slim"
     ],
     "architectures": [
       "amd64",
@@ -387,12 +387,12 @@
   },
   {
     "nodeVersion": "18.20.2",
-    "variant": "8.15-node18-bullseye",
+    "variant": "srbarba/pnpm:8.15-node18-bullseye",
     "tags": [
-      "8.15-node18-bullseye",
-      "8.15-node18.20-bullseye",
-      "8.15-node18.20.2-bullseye",
-      "hydrogen-bullseye"
+      "srbarba/pnpm:8.15-node18-bullseye",
+      "srbarba/pnpm:8.15-node18.20-bullseye",
+      "srbarba/pnpm:8.15-node18.20.2-bullseye",
+      "srbarba/pnpm:hydrogen-bullseye"
     ],
     "architectures": [
       "amd64",
@@ -405,12 +405,12 @@
   },
   {
     "nodeVersion": "18.20.2",
-    "variant": "8.15-node18-bullseye-slim",
+    "variant": "srbarba/pnpm:8.15-node18-bullseye-slim",
     "tags": [
-      "8.15-node18-bullseye-slim",
-      "8.15-node18.20-bullseye-slim",
-      "8.15-node18.20.2-bullseye-slim",
-      "hydrogen-bullseye-slim"
+      "srbarba/pnpm:8.15-node18-bullseye-slim",
+      "srbarba/pnpm:8.15-node18.20-bullseye-slim",
+      "srbarba/pnpm:8.15-node18.20.2-bullseye-slim",
+      "srbarba/pnpm:hydrogen-bullseye-slim"
     ],
     "architectures": [
       "amd64",
@@ -423,12 +423,12 @@
   },
   {
     "nodeVersion": "18.20.2",
-    "variant": "8.15-node18-buster",
+    "variant": "srbarba/pnpm:8.15-node18-buster",
     "tags": [
-      "8.15-node18-buster",
-      "8.15-node18.20-buster",
-      "8.15-node18.20.2-buster",
-      "hydrogen-buster"
+      "srbarba/pnpm:8.15-node18-buster",
+      "srbarba/pnpm:8.15-node18.20-buster",
+      "srbarba/pnpm:8.15-node18.20.2-buster",
+      "srbarba/pnpm:hydrogen-buster"
     ],
     "architectures": [
       "amd64",
@@ -439,12 +439,12 @@
   },
   {
     "nodeVersion": "18.20.2",
-    "variant": "8.15-node18-buster-slim",
+    "variant": "srbarba/pnpm:8.15-node18-buster-slim",
     "tags": [
-      "8.15-node18-buster-slim",
-      "8.15-node18.20-buster-slim",
-      "8.15-node18.20.2-buster-slim",
-      "hydrogen-buster-slim"
+      "srbarba/pnpm:8.15-node18-buster-slim",
+      "srbarba/pnpm:8.15-node18.20-buster-slim",
+      "srbarba/pnpm:8.15-node18.20.2-buster-slim",
+      "srbarba/pnpm:hydrogen-buster-slim"
     ],
     "architectures": [
       "amd64",
