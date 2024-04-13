@@ -92,6 +92,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
+          platforms: ${{ join(matrix.variant.architectures, ',') }}
           build-args: |
             NODE_VARIANT=${{ matrix.variant.variant }}
           tags: ${{ join(matrix.variant.tags, ',') }}
