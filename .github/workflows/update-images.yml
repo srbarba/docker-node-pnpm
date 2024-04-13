@@ -37,11 +37,13 @@ jobs:
         env:
           NODE_NO_WARNINGS: 1
         run: |
-          {
-            echo 'variants<<EOF'
-            node index.mjs
-            echo EOF
-          } >> "$GITHUB_ENV"
+          output=$(node index.mjs)
+          output="${output//'%'/'%25'}"
+          output="${output//$'\n'/'%0A'}"
+          output="${output//$'\r'/'%0D'}"
+          echo "variants<<EOF" >> $GITHUB_ENV
+          echo "$output" >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
 
       - name: Upload nodeVariants.json for use in other jobs
         uses: actions/upload-artifact@v4
