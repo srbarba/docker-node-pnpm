@@ -15,7 +15,7 @@ jobs:
   prepare_variants:
     runs-on: ubuntu-latest
     outputs:
-      variants: ${{ steps.run_script.outputs.variants }}
+      variants: ${{ steps.run_script.outputs.result }}
 
     steps:
       - name: Checkout the repo
@@ -38,7 +38,6 @@ jobs:
         env:
           NODE_NO_WARNINGS: 1
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const { getNodeVariantsToUpdate } = await import('${{ github.workspace }}/index.mjs')
             return getNodeVariantsToUpdate()
