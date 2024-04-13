@@ -179,7 +179,9 @@ export async function getNodeVariants(dir) {
         nodeVersion: `${fullversion.groups.major}.${fullversion.groups.minor}.${fullversion.groups.patch}`,
         variant: mainVariant,
         tags: prefixedTags,
-        architectures: config[version].variants[variant],
+        architectures: config[version].variants[variant].map((a) => {
+          return `linux/${a}`.replace(/(v\d+)$/, '/$1')
+        }),
         directory,
       });
     }
