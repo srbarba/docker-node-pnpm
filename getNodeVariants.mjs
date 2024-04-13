@@ -167,15 +167,17 @@ export async function getNodeVariants(dir) {
         tags.push(`${pnpmMajor}.${pnpmMinor}`);
         tags.push(`${pnpmMajor}.${pnpmMinor}.${pnpmPatch}`);
       }
-      tags = tags.map((tag) => {
+
+      const mainVariant = tags[0];
+      const prefixedTags = tags.map((tag) => {
         return `srbarba/pnpm:${tag}`;
       });
 
       let directory = `${version}/${variant}`;
       versionsTags.push({
         nodeVersion: `${fullversion.groups.major}.${fullversion.groups.minor}.${fullversion.groups.patch}`,
-        variant: tags[0],
-        tags,
+        variant: mainVariant,
+        tags: prefixedTags,
         architectures: config[version].variants[variant],
         directory,
       });
