@@ -34,6 +34,8 @@ jobs:
 
       - name: Run getNodeVariantsToUpdate script and capture output
         id: run_script
+        env: 
+          NODE_NO_WARNINGS: 1
         run: echo "::set-output name=variants::$(node index.mjs)"
 
       - name: Upload nodeVariants.json for use in other jobs
