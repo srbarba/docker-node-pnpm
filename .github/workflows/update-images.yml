@@ -77,7 +77,7 @@ jobs:
           file: ./Dockerfile
           push: false
           build-args: |
-            NODE_VERSION=${{ matrix.variant.nodeVersion }}
+            NODE_VERSION=${{ matrix.variant.tags[0] }}
           tags: "srbarba/pnpm:${{ matrix.variant.tags[0] }}-test"
           load: true # Important for testing the image in subsequent steps
 
