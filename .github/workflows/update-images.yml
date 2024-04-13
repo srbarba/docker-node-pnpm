@@ -20,11 +20,11 @@ jobs:
     steps:
       - name: Checkout the repo
         uses: actions/checkout@v4
-      
+
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 'latest'
+          node-version: "latest"
 
       - name: Install pnpm
         run: npm install -g pnpm@latest
@@ -34,10 +34,14 @@ jobs:
 
       - name: Run getNodeVariantsToUpdate script and capture output
         id: run_script
-        env: 
+        env:
           NODE_NO_WARNINGS: 1
         run: |
-          echo "variants=$(node index.mjs)" >> $GITHUB_ENV
+          {
+            echo 'JSON_RESPONSE<<EOF'
+            node index.mjs
+            echo EOF
+          } >> "$GITHUB_ENV"
 
       - name: Upload nodeVariants.json for use in other jobs
         uses: actions/upload-artifact@v4
