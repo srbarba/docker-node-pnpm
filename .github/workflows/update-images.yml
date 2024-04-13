@@ -36,10 +36,10 @@ jobs:
         id: run_script
         env: 
           NODE_NO_WARNINGS: 1
-        run: echo "::set-output name=variants::$(node index.mjs)"
+        run: echo "variants=$(node index.mjs)" >> $GITHUB_ENV
 
       - name: Upload nodeVariants.json for use in other jobs
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: node-variants
           path: nodeVariants.json
