@@ -52,7 +52,7 @@ jobs:
     needs: prepare_variants
     runs-on: ubuntu-latest
     outputs:
-      variants: ${{ needs.prepare_variants.outputs }}
+      variants: ${{ needs.prepare_variants.outputs.variants }}
     strategy:
       matrix:
         variant: ${{ fromJson(needs.prepare_variants.outputs.variants) }}
