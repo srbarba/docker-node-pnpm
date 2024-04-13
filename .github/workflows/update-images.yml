@@ -78,13 +78,13 @@ jobs:
           push: false
           build-args: |
             NODE_VERSION=${{ matrix.variant.tags[0] }}
-          tags: "srbarba/pnpm:${{ matrix.variant.tags[0] }}-test"
-          load: true # Important for testing the image in subsequent steps
+          tags: ${{ join(matrix.variant.tags, ',') }}
+          load: true
 
       - name: Test Docker image
         run: |
-          docker run --rm "srbarba/pnpm:${{ matrix.variant.tags[0] }}-test" node -v
-          docker run --rm "srbarba/pnpm:${{ matrix.variant.tags[0] }}-test" pnpm -v
+          docker run --rm "srbarba/pnpm:${{ matrix.variant.tags[0] }}" node -v
+          docker run --rm "srbarba/pnpm:${{ matrix.variant.tags[0] }}" pnpm -v
 
       - name: Push Docker image if tests pass
         uses: docker/build-push-action@v5
@@ -92,7 +92,9 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: "srbarba/pnpm:${{ matrix.variant.tags[0] }}"
+          build-args: |
+            NODE_VERSION=${{ matrix.variant.tags[0] }}
+          tags: ${{ join(matrix.variant.tags, ',') }}
 
   update_repository:
     needs: build_and_test_images

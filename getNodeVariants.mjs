@@ -167,6 +167,9 @@ export async function getNodeVariants(dir) {
         tags.push(`${pnpmMajor}.${pnpmMinor}`);
         tags.push(`${pnpmMajor}.${pnpmMinor}.${pnpmPatch}`);
       }
+      tags = tags.map((tag) => {
+        return `srbarba/pnpm:${tag}`;
+      });
 
       let directory = `${version}/${variant}`;
       versionsTags.push({
