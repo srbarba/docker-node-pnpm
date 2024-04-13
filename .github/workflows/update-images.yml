@@ -83,8 +83,8 @@ jobs:
 
       - name: Test Docker image
         run: |
-          docker run --rm "srbarba/pnpm:${{ matrix.variant.tags[0] }}" node -v
-          docker run --rm "srbarba/pnpm:${{ matrix.variant.tags[0] }}" pnpm -v
+          docker run --rm "${{ matrix.variant.tags[0] }}" node -v
+          docker run --rm "${{ matrix.variant.tags[0] }}" pnpm -v
 
       - name: Push Docker image if tests pass
         uses: docker/build-push-action@v5
