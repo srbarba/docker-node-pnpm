@@ -1,0 +1,431 @@
+[
+  {
+    "variant": "21-alpine3.18",
+    "tags": [
+      "21-alpine3.18",
+      "21.7-alpine3.18",
+      "21.7.3-alpine3.18",
+      "alpine3.18",
+      "current-alpine3.18"
+    ],
+    "architectures": [
+      "amd64",
+      "arm32v6",
+      "arm32v7",
+      "arm64v8",
+      "ppc64le",
+      "s390x"
+    ],
+    "directory": "21/alpine3.18"
+  },
+  {
+    "variant": "21-alpine",
+    "tags": [
+      "21-alpine",
+      "21-alpine3.19",
+      "21.7-alpine",
+      "21.7-alpine3.19",
+      "21.7.3-alpine",
+      "21.7.3-alpine3.19",
+      "alpine",
+      "alpine3.19",
+      "current-alpine",
+      "current-alpine3.19"
+    ],
+    "architectures": [
+      "amd64",
+      "arm32v6",
+      "arm32v7",
+      "arm64v8",
+      "ppc64le",
+      "s390x"
+    ],
+    "directory": "21/alpine3.19"
+  },
+  {
+    "variant": "21",
+    "tags": [
+      "21",
+      "21-bookworm",
+      "21.7",
+      "21.7-bookworm",
+      "21.7.3",
+      "21.7.3-bookworm",
+      "bookworm",
+      "current",
+      "current-bookworm",
+      "latest"
+    ],
+    "architectures": [
+      "amd64",
+      "arm32v7",
+      "arm64v8",
+      "ppc64le",
+      "s390x"
+    ],
+    "directory": "21/bookworm"
+  },
+  {
+    "variant": "21-bookworm-slim",
+    "tags": [
+      "21-bookworm-slim",
+      "21-slim",
+      "21.7-bookworm-slim",
+      "21.7-slim",
+      "21.7.3-bookworm-slim",
+      "21.7.3-slim",
+      "bookworm-slim",
+      "current-bookworm-slim",
+      "current-slim",
+      "slim"
+    ],
+    "architectures": [
+      "amd64",
+      "arm32v7",
+      "arm64v8",
+      "ppc64le",
+      "s390x"
+    ],
+    "directory": "21/bookworm-slim"
+  },
+  {
+    "variant": "21-bullseye",
+    "tags": [
+      "21-bullseye",
+      "21.7-bullseye",
+      "21.7.3-bullseye",
+      "bullseye",
+      "current-bullseye"
+    ],
+    "architectures": [
+      "amd64",
+      "arm32v7",
+      "arm64v8",
+      "ppc64le",
+      "s390x"
+    ],
+    "directory": "21/bullseye"
+  },
+  {
+    "variant": "21-bullseye-slim",
+    "tags": [
+      "21-bullseye-slim",
+      "21.7-bullseye-slim",
+      "21.7.3-bullseye-slim",
+      "bullseye-slim",
+      "current-bullseye-slim"
+    ],
+    "architectures": [
+      "amd64",
+      "arm32v7",
+      "arm64v8",
+      "ppc64le",
+      "s390x"
+    ],
+    "directory": "21/bullseye-slim"
+  },
+  {
+    "variant": "20-alpine3.18",
+    "tags": [
+      "20-alpine3.18",
+      "20.12-alpine3.18",
+      "20.12.2-alpine3.18",
+      "iron-alpine3.18",
+      "lts-alpine3.18"
+    ],
+    "architectures": [
+      "amd64",
+      "arm32v6",
+      "arm32v7",
+      "arm64v8",
+      "ppc64le",
+      "s390x"
+    ],
+    "directory": "20/alpine3.18"
+  },
+  {
+    "variant": "20-alpine",
+    "tags": [
+      "20-alpine",
+      "20-alpine3.19",
+      "20.12-alpine",
+      "20.12-alpine3.19",
+      "20.12.2-alpine",
+      "20.12.2-alpine3.19",
+      "iron-alpine",
+      "iron-alpine3.19",
+      "lts-alpine",
+      "lts-alpine3.19"
+    ],
+    "architectures": [
+      "amd64",
+      "arm32v6",
+      "arm32v7",
+      "arm64v8",
+      "ppc64le",
+      "s390x"
+    ],
+    "directory": "20/alpine3.19"
+  },
+  {
+    "variant": "20",
+    "tags": [
+      "20",
+      "20-bookworm",
+      "20.12",
+      "20.12-bookworm",
+      "20.12.2",
+      "20.12.2-bookworm",
+      "iron",
+      "iron-bookworm",
+      "lts",
+      "lts-bookworm",
+      "lts-iron"
+    ],
+    "architectures": [
+      "amd64",
+      "arm32v7",
+      "arm64v8",
+      "ppc64le",
+      "s390x"
+    ],
+    "directory": "20/bookworm"
+  },
+  {
+    "variant": "20-bookworm-slim",
+    "tags": [
+      "20-bookworm-slim",
+      "20-slim",
+      "20.12-bookworm-slim",
+      "20.12-slim",
+      "20.12.2-bookworm-slim",
+      "20.12.2-slim",
+      "iron-bookworm-slim",
+      "iron-slim",
+      "lts-bookworm-slim",
+      "lts-slim"
+    ],
+    "architectures": [
+      "amd64",
+      "arm32v7",
+      "arm64v8",
+      "ppc64le",
+      "s390x"
+    ],
+    "directory": "20/bookworm-slim"
+  },
+  {
+    "variant": "20-bullseye",
+    "tags": [
+      "20-bullseye",
+      "20.12-bullseye",
+      "20.12.2-bullseye",
+      "iron-bullseye",
+      "lts-bullseye"
+    ],
+    "architectures": [
+      "amd64",
+      "arm32v7",
+      "arm64v8",
+      "ppc64le",
+      "s390x"
+    ],
+    "directory": "20/bullseye"
+  },
+  {
+    "variant": "20-bullseye-slim",
+    "tags": [
+      "20-bullseye-slim",
+      "20.12-bullseye-slim",
+      "20.12.2-bullseye-slim",
+      "iron-bullseye-slim",
+      "lts-bullseye-slim"
+    ],
+    "architectures": [
+      "amd64",
+      "arm32v7",
+      "arm64v8",
+      "ppc64le",
+      "s390x"
+    ],
+    "directory": "20/bullseye-slim"
+  },
+  {
+    "variant": "20-buster",
+    "tags": [
+      "20-buster",
+      "20.12-buster",
+      "20.12.2-buster",
+      "iron-buster",
+      "lts-buster"
+    ],
+    "architectures": [
+      "amd64",
+      "arm32v7",
+      "arm64v8"
+    ],
+    "directory": "20/buster"
+  },
+  {
+    "variant": "20-buster-slim",
+    "tags": [
+      "20-buster-slim",
+      "20.12-buster-slim",
+      "20.12.2-buster-slim",
+      "iron-buster-slim",
+      "lts-buster-slim"
+    ],
+    "architectures": [
+      "amd64",
+      "arm32v7",
+      "arm64v8"
+    ],
+    "directory": "20/buster-slim"
+  },
+  {
+    "variant": "18-alpine3.18",
+    "tags": [
+      "18-alpine3.18",
+      "18.20-alpine3.18",
+      "18.20.2-alpine3.18",
+      "hydrogen-alpine3.18"
+    ],
+    "architectures": [
+      "amd64",
+      "arm32v6",
+      "arm32v7",
+      "arm64v8",
+      "ppc64le",
+      "s390x"
+    ],
+    "directory": "18/alpine3.18"
+  },
+  {
+    "variant": "18-alpine",
+    "tags": [
+      "18-alpine",
+      "18-alpine3.19",
+      "18.20-alpine",
+      "18.20-alpine3.19",
+      "18.20.2-alpine",
+      "18.20.2-alpine3.19",
+      "hydrogen-alpine",
+      "hydrogen-alpine3.19"
+    ],
+    "architectures": [
+      "amd64",
+      "arm32v6",
+      "arm32v7",
+      "arm64v8",
+      "ppc64le",
+      "s390x"
+    ],
+    "directory": "18/alpine3.19"
+  },
+  {
+    "variant": "18",
+    "tags": [
+      "18",
+      "18-bookworm",
+      "18.20",
+      "18.20-bookworm",
+      "18.20.2",
+      "18.20.2-bookworm",
+      "hydrogen",
+      "hydrogen-bookworm"
+    ],
+    "architectures": [
+      "amd64",
+      "arm32v7",
+      "arm64v8",
+      "ppc64le",
+      "s390x"
+    ],
+    "directory": "18/bookworm"
+  },
+  {
+    "variant": "18-bookworm-slim",
+    "tags": [
+      "18-bookworm-slim",
+      "18-slim",
+      "18.20-bookworm-slim",
+      "18.20-slim",
+      "18.20.2-bookworm-slim",
+      "18.20.2-slim",
+      "hydrogen-bookworm-slim",
+      "hydrogen-slim"
+    ],
+    "architectures": [
+      "amd64",
+      "arm32v7",
+      "arm64v8",
+      "ppc64le",
+      "s390x"
+    ],
+    "directory": "18/bookworm-slim"
+  },
+  {
+    "variant": "18-bullseye",
+    "tags": [
+      "18-bullseye",
+      "18.20-bullseye",
+      "18.20.2-bullseye",
+      "hydrogen-bullseye"
+    ],
+    "architectures": [
+      "amd64",
+      "arm32v7",
+      "arm64v8",
+      "ppc64le",
+      "s390x"
+    ],
+    "directory": "18/bullseye"
+  },
+  {
+    "variant": "18-bullseye-slim",
+    "tags": [
+      "18-bullseye-slim",
+      "18.20-bullseye-slim",
+      "18.20.2-bullseye-slim",
+      "hydrogen-bullseye-slim"
+    ],
+    "architectures": [
+      "amd64",
+      "arm32v7",
+      "arm64v8",
+      "ppc64le",
+      "s390x"
+    ],
+    "directory": "18/bullseye-slim"
+  },
+  {
+    "variant": "18-buster",
+    "tags": [
+      "18-buster",
+      "18.20-buster",
+      "18.20.2-buster",
+      "hydrogen-buster"
+    ],
+    "architectures": [
+      "amd64",
+      "arm32v7",
+      "arm64v8"
+    ],
+    "directory": "18/buster"
+  },
+  {
+    "variant": "18-buster-slim",
+    "tags": [
+      "18-buster-slim",
+      "18.20-buster-slim",
+      "18.20.2-buster-slim",
+      "hydrogen-buster-slim"
+    ],
+    "architectures": [
+      "amd64",
+      "arm32v7",
+      "arm64v8"
+    ],
+    "directory": "18/buster-slim"
+  }
+]

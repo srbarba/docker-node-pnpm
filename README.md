@@ -1,2 +1,3 @@
 # docker-node-pnpm
-Non oficial Docker Node + pnpm images
+
+Non-official Docker Node images with pnpm pre-installed.

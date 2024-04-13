@@ -1,0 +1,6 @@
+{
+  "name": "docker-node-extends",
+  "dependencies": {
+    "giget": "^1.2.3"
+  }
+}

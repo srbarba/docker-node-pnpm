@@ -1,0 +1,127 @@
+name: Update docker images
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "index.mjs"
+      - "getNodeVariants.mjs"
+      - "nodeVariants.json"
+      - "Dockerfile"
+      - ".github/workflows/update-images.yml"
+
+jobs:
+  prepare_variants:
+    runs-on: ubuntu-latest
+    outputs:
+      variants: ${{ steps.run_script.outputs.variants }}
+
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v4
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'latest'
+
+      - name: Install pnpm
+        run: npm install -g pnpm@latest
+
+      - name: Install dependencies with pnpm
+        run: pnpm install --frozen-lockfile
+
+      - name: Run getNodeVariantsToUpdate script and capture output
+        id: run_script
+        run: echo "::set-output name=variants::$(node index.mjs)"
+
+      - name: Upload nodeVariants.json for use in other jobs
+        uses: actions/upload-artifact@v3
+        with:
+          name: node-variants
+          path: nodeVariants.json
+
+  build_and_test_images:
+    needs: prepare_variants
+    runs-on: ubuntu-latest
+    outputs:
+      variants: ${{ needs.prepare_variants.outputs }}
+    strategy:
+      matrix:
+        variant: ${{ fromJson(needs.prepare_variants.outputs.variants) }}
+
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v4
+
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+
+      - name: Build and test Docker images
+        uses: docker/build-push-action@v3
+        with:
+          context: .
+          file: ./Dockerfile
+          push: false
+          tags: "pnpm:${{ matrix.variant.tags[0] }}:test"
+          load: true # Important for testing the image in subsequent steps
+
+      - name: Test Docker image
+        run: |
+          docker run --rm "pnpm:${{ matrix.variant.tags[0] }}:test" pnpm -v
+
+      - name: Push Docker image if tests pass
+        uses: docker/build-push-action@v3
+        with:
+          context: .
+          file: ./Dockerfile
+          push: true
+          tags: "pnpm:${{ matrix.variant.tags[0] }}"
+
+  update_repository:
+    needs: build_and_test_images
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v4
+
+      - name: Download nodeVariants.json for commit
+        uses: actions/download-artifact@v3
+        with:
+          name: node-variants
+
+      - name: Prepare variant names for commit message
+        id: prepare_commit
+        run: |
+          variant_names=$(echo '${{ needs.build_and_test_images.outputs.variants }}' | jq -r '.[].variant' | paste -sd, -)
+          echo "::set-output name=variant_names::$variant_names"
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add nodeVariants.json
+          git commit -m "feat: update variants ${{ steps.prepare_commit.outputs.variant_names }}"
+          git push
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "feat: update variants ${{ steps.prepare_commit.outputs.variant_names }}"
+          title: "feat: update variants ${{ steps.prepare_commit.outputs.variant_names }}"
+          branch: "feature-update-variants"
+
+      - name: Auto-merge Pull Request
+        uses: pascalgn/automerge-action@v0.14.3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          merge-method: squash
