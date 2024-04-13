@@ -117,7 +117,7 @@ jobs:
 
       - name: Create Pull Request
         id: create_pull_request
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "feat: update variants ${{ steps.prepare_commit.outputs.variant_names }}"
