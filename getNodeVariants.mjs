@@ -180,7 +180,7 @@ export async function getNodeVariants(dir) {
         variant: mainVariant,
         tags: prefixedTags,
         architectures: config[version].variants[variant].map((a) => {
-          return `linux/${a}`.replace(/(v\d+)$/, '/$1')
+          return `linux/${a}`.replace(/(32)?(v\d+)$/, '/$2')
         }),
         directory,
       });
