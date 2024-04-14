@@ -158,30 +158,11 @@ export async function getNodeVariants(dir) {
       tags = tags.sort();
       const mainVariant = tags[0];
 
-      const pnpmTags = tags = tags.map((tag) => {
-        if (isNaN(Number(tag[0]))) {
-          return tag;
-        }
-        return `${pnpmMajor}.${pnpmMinor}-node${tag}`;
-      });
-      if (pnpmTags.includes("latest")) {
-        pnpmTags.push(`${pnpmMajor}`);
-        pnpmTags.push(`${pnpmMajor}.${pnpmMinor}`);
-        pnpmTags.push(`${pnpmMajor}.${pnpmMinor}.${pnpmPatch}`);
-      }
-
-      const prefixedTags = pnpmTags.map((tag) => {
-        return `srbarba/pnpm:${tag}`;
-      });
-
       let directory = `${version}/${variant}`;
       versionsTags.push({
         nodeVersion: `${fullversion.groups.major}.${fullversion.groups.minor}.${fullversion.groups.patch}`,
         variant: mainVariant,
-        tags: prefixedTags,
-        architectures: config[version].variants[variant].map((a) => {
-          return `linux/${a}`.replace(/(32)?(v\d+)$/, '/$2')
-        }),
+        tags,
         directory,
       });
     }
