@@ -125,7 +125,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          platforms: ${{ join(matrix.variant.architectures, ',') }}
+          platforms: ${{ join(steps.get_image_platforms.outputs.result, ',') }}
           build-args: |
             NODE_VARIANT=${{ matrix.variant.variant }}
           tags: ${{ join(steps.prepare_producction_tags.outputs.result, ',') }}
