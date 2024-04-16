@@ -12,7 +12,7 @@ export async function getDockerImagePlatforms(dockerImage) {
 
 function getDockerInspect(dockerImage) {
   return new Promise((resolve, reject) => {
-    exec(`docker inspect ${dockerImage}`, (error, stdout, stderr) => {
+    exec(`docker manifest inspect ${dockerImage}`, (error, stdout, stderr) => {
       if (error) {
         reject(error);
       }
