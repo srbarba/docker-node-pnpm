@@ -2,6 +2,7 @@ import { exec } from "child_process";
 
 export async function getDockerImagePlatforms(dockerImage) {
   const inspect = await getDockerInspect(dockerImage);
+  console.dir(inspect.manifests);
   return inspect.manifests.map((manifest) => {
     const platform = `${manifest.platform.os}/${manifest.platform.architecture}`;
     return manifest.platform.variant
