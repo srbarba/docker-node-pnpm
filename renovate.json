@@ -32,7 +32,7 @@
       "versioningTemplate": "docker"
     },
     {
-      "fileMatch": ["getNodeVariants\\.mjs$"],
+      "fileMatch": ["prepareTags\\.mjs$"],
       "matchStrings": [
         "const pnpmVersion = '(?<currentValue>\\d+\\.\\d+\\.\\d+)'"
       ],

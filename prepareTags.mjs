@@ -1,3 +1,6 @@
+const pnpmVersion = "8.15.6";
+const [pnpmMajor, pnpmMinor, pnpmPatch] = pnpmVersion.split(".");
+
 export function prepareTags(tags, prefix) {
   console.log(tags);
   const pnpmTags = tags.map((tag) => {
