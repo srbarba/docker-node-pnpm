@@ -19,8 +19,13 @@ function getDockerInspect(dockerImage) {
       if (stderr) {
         reject(stderr);
       }
-      const inspect = JSON.parse(stdout);
-      resolve(inspect);
+      try {
+        const inspect = JSON.parse(stdout);
+        resolve(inspect);
+      } catch (e) {
+        console.log(stdout)
+        reject(e);
+      }
     });
   });
 }
