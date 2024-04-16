@@ -94,13 +94,13 @@ jobs:
           push: false
           build-args: |
             NODE_VARIANT=${{ matrix.variant.variant }}
-          tags: ${{ join(steps.prepare_test_tags.outputs.result, ',') }}
+          tags: ${{ join(fromJson(steps.prepare_test_tags.outputs.result), ',') }}
           load: true
 
       - name: Test Docker image
         run: |
-          docker run --rm ${{ steps.prepare_test_tags.outputs.result[0] }} node -v
-          docker run --rm ${{ steps.prepare_test_tags.outputs.result[0] }} pnpm -v
+          docker run --rm ${{ fromJson(steps.prepare_test_tags.outputs.result)[0] }} node -v
+          docker run --rm ${{ fromJson(steps.prepare_test_tags.outputs.result)[0] }} pnpm -v
 
       - name: Prepare tags for production Docker images
         id: prepare_producction_tags
@@ -125,10 +125,10 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          platforms: ${{ join(steps.get_image_platforms.outputs.result, ',') }}
+          platforms: ${{ join(fromJson(steps.get_image_platforms.outputs.result), ',') }}
           build-args: |
             NODE_VARIANT=${{ matrix.variant.variant }}
-          tags: ${{ join(steps.prepare_producction_tags.outputs.result, ',') }}
+          tags: ${{ join(fromJson(steps.prepare_producction_tags.outputs.result), ',') }}
 
   update_repository:
     needs: build_and_test_images
