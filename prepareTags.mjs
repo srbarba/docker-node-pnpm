@@ -17,5 +17,6 @@ export function prepareTags(tags, prefix) {
   });
   console.log(tags);
   console.log(prefixedTags);
+  
   return prefixedTags.join(",");
 }
