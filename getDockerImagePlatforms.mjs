@@ -23,7 +23,7 @@ function getDockerInspect(dockerImage) {
         const inspect = JSON.parse(stdout);
         resolve(inspect);
       } catch (e) {
-        console.log(stdout)
+        console.log(stdout);
         reject(e);
       }
     });
