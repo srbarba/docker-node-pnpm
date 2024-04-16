@@ -1,4 +1,6 @@
-export function prepareTags(tags, prefix) {
+export function prepareTags(context, tags, prefix) {
+  console.dir(context);
+  console.dir(tags);
   const pnpmTags = tags.map((tag) => {
     if (isNaN(Number(tag[0]))) {
       return tag;
