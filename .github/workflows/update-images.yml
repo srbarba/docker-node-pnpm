@@ -11,6 +11,7 @@ on:
       - "index.mjs"
       - "getNodeVariants.mjs"
       - "prepareTags.mjs"
+      - "getDockerImagePlatforms.mjs"
       - "nodeVariants.json"
       - "Dockerfile"
       - ".github/workflows/update-images.yml"
