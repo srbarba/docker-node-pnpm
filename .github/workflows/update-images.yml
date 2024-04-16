@@ -107,7 +107,7 @@ jobs:
         id: prepare_producction_tags
         uses: actions/github-script@v7
         with:
-          retry: 3
+          retries: 3
           script: |
             const { DOCKER_REPO } = process.env
             const { prepareTags } = await import('${{ github.workspace }}/prepareTags.mjs')
