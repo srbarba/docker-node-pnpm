@@ -18,5 +18,5 @@ export function prepareTags(tags, prefix) {
     return `${prefix}${tag}`;
   });
 
-  return prefixedTags.join(",");
+  return prefixedTags;
 }

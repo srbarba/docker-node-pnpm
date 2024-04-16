@@ -94,7 +94,7 @@ jobs:
           push: false
           build-args: |
             NODE_VARIANT=${{ matrix.variant.variant }}
-          tags: ${{ steps.prepare_test_tags.outputs.result }}
+          tags: ${{ join(steps.prepare_test_tags.outputs.result, ',') }}
           load: true
 
       - name: Test Docker image
@@ -128,7 +128,7 @@ jobs:
           platforms: ${{ join(matrix.variant.architectures, ',') }}
           build-args: |
             NODE_VARIANT=${{ matrix.variant.variant }}
-          tags: ${{ steps.prepare_producction_tags.outputs.result }}
+          tags: ${{ join(steps.prepare_producction_tags.outputs.result, ',') }}
 
   update_repository:
     needs: build_and_test_images
