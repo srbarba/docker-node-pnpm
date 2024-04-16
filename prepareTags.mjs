@@ -2,7 +2,6 @@ const pnpmVersion = "8.15.6";
 const [pnpmMajor, pnpmMinor, pnpmPatch] = pnpmVersion.split(".");
 
 export function prepareTags(tags, prefix) {
-  console.log(tags);
   const pnpmTags = tags.map((tag) => {
     if (isNaN(Number(tag[0]))) {
       return tag;
@@ -18,8 +17,6 @@ export function prepareTags(tags, prefix) {
   const prefixedTags = pnpmTags.map((tag) => {
     return `${prefix}${tag}`;
   });
-
-  console.log(prefixedTags);
 
   return prefixedTags.join(",");
 }
