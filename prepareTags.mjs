@@ -1,6 +1,6 @@
 export function prepareTags(tags, prefix) {
-  const _tags = JSON.parse(tags);
-  const pnpmTags = _tags.map((tag) => {
+  console.log(tags);
+  const pnpmTags = tags.map((tag) => {
     if (isNaN(Number(tag[0]))) {
       return tag;
     }
@@ -16,8 +16,6 @@ export function prepareTags(tags, prefix) {
     return `${prefix}${tag}`;
   });
 
-  console.log(tags);
-  console.log(_tags);
   console.log(prefixedTags);
 
   return prefixedTags.join(",");
