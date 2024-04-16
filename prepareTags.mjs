@@ -15,6 +15,7 @@ export function prepareTags(tags, prefix) {
   const prefixedTags = pnpmTags.map((tag) => {
     return `${prefix}${tag}`;
   });
-
+  console.log(tags);
+  console.log(prefixedTags);
   return prefixedTags.join(",");
 }
