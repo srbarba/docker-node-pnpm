@@ -1,5 +1,5 @@
 export function prepareTags(tags, prefix) {
-  const _tags = tags();
+  const _tags = JSON.parse(tags);
   const pnpmTags = _tags.map((tag) => {
     if (isNaN(Number(tag[0]))) {
       return tag;
