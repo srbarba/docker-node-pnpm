@@ -1,7 +1,5 @@
-export function prepareTags(context, tags, prefix) {
-  console.dir(context);
-  console.dir(tags);
-  const _tags = JSON.parse(tags);
+export function prepareTags(tags, prefix) {
+  const _tags = tags();
   const pnpmTags = _tags.map((tag) => {
     if (isNaN(Number(tag[0]))) {
       return tag;

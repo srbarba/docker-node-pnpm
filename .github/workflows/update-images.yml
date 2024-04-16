@@ -82,7 +82,7 @@ jobs:
         with:
           script: |
             const { prepareTags } = await import('${{ github.workspace }}/prepareTags.mjs')
-            return prepareTags(context, ${{ matrix.variant.tags }}, '$DOCKER_REPO:test-')
+            return prepareTags(${{ matrix.variant.tags }}, '$DOCKER_REPO:test-')
 
       - name: Build and test Docker images
         uses: docker/build-push-action@v5
@@ -106,7 +106,7 @@ jobs:
         with:
           script: |
             const { prepareTags } = await import('${{ github.workspace }}/prepareTags.mjs')
-            return prepareTags(context, ${{ matrix.variant.tags }}, '$DOCKER_REPO:')
+            return prepareTags(${{ matrix.variant.tags }}, '$DOCKER_REPO:')
 
       - name: Get image platforms
         id: get_image_platforms
