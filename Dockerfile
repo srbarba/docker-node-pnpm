@@ -2,4 +2,4 @@ ARG NODE_VARIANT=20.12.2@sha256:844b41cf784f66d7920fd673f7af54ca7b81e289985edc6c
 ARG PNPM_VERSION=8.15.6
 
 FROM node:$NODE_VARIANT
-RUN npm install -g pnpm@$PNPM_VERSION
+RUN npm install -g pnpm@$PNPM_VERSION --no-audit
