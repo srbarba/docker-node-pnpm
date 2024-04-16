@@ -99,8 +99,8 @@ jobs:
 
       - name: Test Docker image
         run: |
-          docker run --rm "${{ steps.prepare_test_tags.outputs.result[0] }}" node -v
-          docker run --rm "${{ steps.prepare_test_tags.outputs.result[0] }}" pnpm -v
+          docker run --rm ${{ steps.prepare_test_tags.outputs.result[0] }} node -v
+          docker run --rm ${{ steps.prepare_test_tags.outputs.result[0] }} pnpm -v
 
       - name: Prepare tags for production Docker images
         id: prepare_producction_tags
