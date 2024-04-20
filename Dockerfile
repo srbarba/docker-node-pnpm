@@ -4,11 +4,4 @@ FROM node:$NODE_VARIANT as install
 ARG PNPM_VERSION=8.15.6
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
-RUN apk add --no-cache wget || (apt-get update && apt-get install -y wget)
-RUN wget -qO- https://get.pnpm.io/install.sh | ENV="$HOME/.shrc" SHELL="$(which sh)" sh -
-
-FROM node:$NODE_VARIANT
-ENV PNPM_HOME="/pnpm"
-ENV PATH="$PNPM_HOME:$PATH"
-COPY --from=install $PNPM_HOME $PNPM_HOME
-CMD echo $PATH
+RUN npm install -g pnpm@$PNPM_VERSION && npm cache clean --force
