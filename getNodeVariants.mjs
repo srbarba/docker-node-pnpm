@@ -1,9 +1,6 @@
 import fs from "fs";
 import path from "path";
 
-const pnpmVersion = "8.15.6";
-const [pnpmMajor, pnpmMinor, pnpmPatch] = pnpmVersion.split(".");
-
 export async function getNodeVariants(dir) {
   const versionsTags = [];
 
