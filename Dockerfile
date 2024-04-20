@@ -4,7 +4,9 @@ FROM node:$NODE_VARIANT as install
 ARG PNPM_VERSION=8.15.6
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
+RUN apk add --no-cache --virtual .wget wget
 RUN wget -qO- https://get.pnpm.io/install.sh | ENV="$HOME/.shrc" SHELL="$(which sh)" sh -
+RUN apk del .wget
 
 FROM node:$NODE_VARIANT
 ENV PNPM_HOME="/pnpm"
