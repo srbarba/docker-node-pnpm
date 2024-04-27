@@ -52,7 +52,7 @@ jobs:
         run: echo "${{ steps.run_script.outputs.result }}"
 
       - name: Debug output json
-        run: echo "${{ fromJson(steps.run_script.outputs.result) }}"
+        run: echo "${{ fromJson(steps.run_script.outputs.result).length }}"
 
       - name: Upload nodeVariants.json for use in other jobs
         uses: actions/upload-artifact@v4
@@ -89,7 +89,7 @@ jobs:
           file: ./Dockerfile
           push: false
           build-args: |
-            NODE_VARIANT=${{ matrix.variant.variant }}
+            NODE_VARIANT=${{ matrix.variant.nodeVariant }}
             PNPM_VERSION=${{ matrix.variant.pnpm }}
           tags: ${{ matrix.variant.testTag }}
           load: true
@@ -105,7 +105,7 @@ jobs:
         with:
           script: |
             const { getDockerImagePlatforms } = await import('${{ github.workspace }}/getDockerImagePlatforms.mjs')
-            return getDockerImagePlatforms('node:${{ matrix.variant.variant }}')
+            return getDockerImagePlatforms('node:${{ matrix.variant.nodeVariant }}')
 
       - name: Push Docker image if tests pass
         uses: docker/build-push-action@v5
@@ -116,7 +116,7 @@ jobs:
           provenance: false
           platforms: ${{ join(fromJson(steps.get_image_platforms.outputs.result), ',') }}
           build-args: |
-            NODE_VARIANT=${{ matrix.variant.variant }}
+            NODE_VARIANT=${{ matrix.variant.nodeVariant }}
             PNPM_VERSION=${{ matrix.variant.pnpm }}
           tags: ${{ join(matrix.variant.tags, ',') }}
 
