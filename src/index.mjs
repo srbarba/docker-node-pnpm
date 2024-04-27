@@ -57,7 +57,7 @@ function getAllVariants(allNodeVariants, allPnpmVariants) {
           pnpmLatest: pnpmVariant.latest,
           pnpmNext: pnpmVariant.next,
           nodeLatest: nodeVariant.latest,
-          testTag: `TEST-${tags[0]}`,
+          testTag: `test-${tags[0]}`,
           tags,
         });
       }, [])
