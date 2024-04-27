@@ -13,8 +13,8 @@ export async function getVariantsToUpdate(namespace) {
 
   return needsToUpdateVariants.map((variant) => ({
     ...variant,
-    testTag: `${namespace}/${variant.testTag}`,
-    tags: variant.tags.map((tag) => `${namespace}/${tag}`),
+    testTag: `${namespace}/pnpm:${variant.testTag}`,
+    tags: variant.tags.map((tag) => `${namespace}/pnpm:${tag}`),
   }));
 }
 
