@@ -142,6 +142,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: variants-folder
+          path: variants
 
       - name: Prepare variant names for commit message
         id: prepare_commit
@@ -158,7 +159,6 @@ jobs:
           title: "feat: update variants ${{ steps.prepare_commit.outputs.variant_names }}"
           branch: "feature/update-variants"
           delete-branch: true
-          add-paths: variants/nodeVariants.json,variants/allVariants.json,variants/pnpmVariants.json
 
       - name: Enable Pull Request Automerge
         if: steps.create_pull_request.outputs.pull-request-operation == 'created'
