@@ -46,7 +46,7 @@ jobs:
         with:
           script: |
             const { getVariantsToUpdate } = await import('${{ github.workspace }}/src/index.mjs')
-            return getVariantsToUpdate('srbarba/')
+            return getVariantsToUpdate('srbarba')
 
       - name: Upload nodeVariants.json for use in other jobs
         uses: actions/upload-artifact@v4

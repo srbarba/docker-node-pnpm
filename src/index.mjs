@@ -3,7 +3,7 @@ import { getNodeVariants } from "./getNodeVariants.mjs";
 import { getPnpmVariants } from "./getPnpmVariants.mjs";
 import fs from "fs";
 
-export async function getVariantsToUpdate(tagsPrefix) {
+export async function getVariantsToUpdate(namespace) {
   const allNodeVariants = await getAllNodeVariants();
   const allPnpmVariants = await getAllPnpmVariants();
   const { needsToUpdateVariants } = getAllVariants(
@@ -13,8 +13,8 @@ export async function getVariantsToUpdate(tagsPrefix) {
 
   return needsToUpdateVariants.map((variant) => ({
     ...variant,
-    testTag: `${tagsPrefix}-${variant.testTag}`,
-    tags: variant.tags.map((tag) => `${tagsPrefix}-${tag}`),
+    testTag: `${namespace}/${variant.testTag}`,
+    tags: variant.tags.map((tag) => `${namespace}/${tag}`),
   }));
 }
 
