@@ -3,8 +3,6 @@ import { getNodeVariants } from "./getNodeVariants.mjs";
 import { getPnpmVariants } from "./getPnpmVariants.mjs";
 import fs from "fs";
 
-getVariantsToUpdate();
-
 export async function getVariantsToUpdate() {
   const allNodeVariants = await getAllNodeVariants();
   const allPnpmVariants = await getAllPnpmVariants();

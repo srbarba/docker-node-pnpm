@@ -46,8 +46,8 @@ jobs:
           NODE_NO_WARNINGS: 1
         with:
           script: |
-            const { getNodeVariantsToUpdate } = await import('${{ github.workspace }}/index.mjs')
-            return getNodeVariantsToUpdate()
+            const { getVariantsToUpdate } = await import('${{ github.workspace }}/index.mjs')
+            return getVariantsToUpdate()
 
       - name: Upload nodeVariants.json for use in other jobs
         uses: actions/upload-artifact@v4
