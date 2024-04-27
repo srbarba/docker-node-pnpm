@@ -144,7 +144,7 @@ jobs:
           title: "feat: update variants ${{ steps.prepare_commit.outputs.variant_names }}"
           branch: "feature/update-variants"
           delete-branch: true
-          add-paths: "nodeVariants.json"
+          add-paths: "nodeVariants.json,allVariants.json,pnpmVariants.json"
 
       - name: Enable Pull Request Automerge
         if: steps.create_pull_request.outputs.pull-request-operation == 'created'
