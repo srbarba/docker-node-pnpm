@@ -1,94 +1,176 @@
 [
   {
-    "nodeVersion": "21.7.3",
+    "version": "22.0.0",
+    "variant": "22-alpine3.18",
+    "latest": false,
+    "tags": [
+      "22-alpine3.18",
+      "22.0-alpine3.18",
+      "22.0.0-alpine3.18",
+      "alpine3.18",
+      "current-alpine3.18"
+    ],
+    "directory": "22/alpine3.18"
+  },
+  {
+    "version": "22.0.0",
+    "variant": "22-alpine",
+    "latest": false,
+    "tags": [
+      "22-alpine",
+      "22-alpine3.19",
+      "22.0-alpine",
+      "22.0-alpine3.19",
+      "22.0.0-alpine",
+      "22.0.0-alpine3.19",
+      "alpine",
+      "alpine3.19",
+      "current-alpine",
+      "current-alpine3.19"
+    ],
+    "directory": "22/alpine3.19"
+  },
+  {
+    "version": "22.0.0",
+    "variant": "22",
+    "latest": true,
+    "tags": [
+      "22",
+      "22-bookworm",
+      "22.0",
+      "22.0-bookworm",
+      "22.0.0",
+      "22.0.0-bookworm",
+      "bookworm",
+      "current",
+      "current-bookworm",
+      "latest"
+    ],
+    "directory": "22/bookworm"
+  },
+  {
+    "version": "22.0.0",
+    "variant": "22-bookworm-slim",
+    "latest": false,
+    "tags": [
+      "22-bookworm-slim",
+      "22-slim",
+      "22.0-bookworm-slim",
+      "22.0-slim",
+      "22.0.0-bookworm-slim",
+      "22.0.0-slim",
+      "bookworm-slim",
+      "current-bookworm-slim",
+      "current-slim",
+      "slim"
+    ],
+    "directory": "22/bookworm-slim"
+  },
+  {
+    "version": "22.0.0",
+    "variant": "22-bullseye",
+    "latest": false,
+    "tags": [
+      "22-bullseye",
+      "22.0-bullseye",
+      "22.0.0-bullseye",
+      "bullseye",
+      "current-bullseye"
+    ],
+    "directory": "22/bullseye"
+  },
+  {
+    "version": "22.0.0",
+    "variant": "22-bullseye-slim",
+    "latest": false,
+    "tags": [
+      "22-bullseye-slim",
+      "22.0-bullseye-slim",
+      "22.0.0-bullseye-slim",
+      "bullseye-slim",
+      "current-bullseye-slim"
+    ],
+    "directory": "22/bullseye-slim"
+  },
+  {
+    "version": "21.7.3",
     "variant": "21-alpine3.18",
+    "latest": false,
     "tags": [
       "21-alpine3.18",
       "21.7-alpine3.18",
-      "21.7.3-alpine3.18",
-      "alpine3.18",
-      "current-alpine3.18"
+      "21.7.3-alpine3.18"
     ],
     "directory": "21/alpine3.18"
   },
   {
-    "nodeVersion": "21.7.3",
+    "version": "21.7.3",
     "variant": "21-alpine",
+    "latest": false,
     "tags": [
       "21-alpine",
       "21-alpine3.19",
       "21.7-alpine",
       "21.7-alpine3.19",
       "21.7.3-alpine",
-      "21.7.3-alpine3.19",
-      "alpine",
-      "alpine3.19",
-      "current-alpine",
-      "current-alpine3.19"
+      "21.7.3-alpine3.19"
     ],
     "directory": "21/alpine3.19"
   },
   {
-    "nodeVersion": "21.7.3",
+    "version": "21.7.3",
     "variant": "21",
+    "latest": false,
     "tags": [
       "21",
       "21-bookworm",
       "21.7",
       "21.7-bookworm",
       "21.7.3",
-      "21.7.3-bookworm",
-      "bookworm",
-      "current",
-      "current-bookworm",
-      "latest"
+      "21.7.3-bookworm"
     ],
     "directory": "21/bookworm"
   },
   {
-    "nodeVersion": "21.7.3",
+    "version": "21.7.3",
     "variant": "21-bookworm-slim",
+    "latest": false,
     "tags": [
       "21-bookworm-slim",
       "21-slim",
       "21.7-bookworm-slim",
       "21.7-slim",
       "21.7.3-bookworm-slim",
-      "21.7.3-slim",
-      "bookworm-slim",
-      "current-bookworm-slim",
-      "current-slim",
-      "slim"
+      "21.7.3-slim"
     ],
     "directory": "21/bookworm-slim"
   },
   {
-    "nodeVersion": "21.7.3",
+    "version": "21.7.3",
     "variant": "21-bullseye",
+    "latest": false,
     "tags": [
       "21-bullseye",
       "21.7-bullseye",
-      "21.7.3-bullseye",
-      "bullseye",
-      "current-bullseye"
+      "21.7.3-bullseye"
     ],
     "directory": "21/bullseye"
   },
   {
-    "nodeVersion": "21.7.3",
+    "version": "21.7.3",
     "variant": "21-bullseye-slim",
+    "latest": false,
     "tags": [
       "21-bullseye-slim",
       "21.7-bullseye-slim",
-      "21.7.3-bullseye-slim",
-      "bullseye-slim",
-      "current-bullseye-slim"
+      "21.7.3-bullseye-slim"
     ],
     "directory": "21/bullseye-slim"
   },
   {
-    "nodeVersion": "20.12.2",
+    "version": "20.12.2",
     "variant": "20-alpine3.18",
+    "latest": false,
     "tags": [
       "20-alpine3.18",
       "20.12-alpine3.18",
@@ -99,8 +181,9 @@
     "directory": "20/alpine3.18"
   },
   {
-    "nodeVersion": "20.12.2",
+    "version": "20.12.2",
     "variant": "20-alpine",
+    "latest": false,
     "tags": [
       "20-alpine",
       "20-alpine3.19",
@@ -116,8 +199,9 @@
     "directory": "20/alpine3.19"
   },
   {
-    "nodeVersion": "20.12.2",
+    "version": "20.12.2",
     "variant": "20",
+    "latest": false,
     "tags": [
       "20",
       "20-bookworm",
@@ -134,8 +218,9 @@
     "directory": "20/bookworm"
   },
   {
-    "nodeVersion": "20.12.2",
+    "version": "20.12.2",
     "variant": "20-bookworm-slim",
+    "latest": false,
     "tags": [
       "20-bookworm-slim",
       "20-slim",
@@ -151,8 +236,9 @@
     "directory": "20/bookworm-slim"
   },
   {
-    "nodeVersion": "20.12.2",
+    "version": "20.12.2",
     "variant": "20-bullseye",
+    "latest": false,
     "tags": [
       "20-bullseye",
       "20.12-bullseye",
@@ -163,8 +249,9 @@
     "directory": "20/bullseye"
   },
   {
-    "nodeVersion": "20.12.2",
+    "version": "20.12.2",
     "variant": "20-bullseye-slim",
+    "latest": false,
     "tags": [
       "20-bullseye-slim",
       "20.12-bullseye-slim",
@@ -175,8 +262,9 @@
     "directory": "20/bullseye-slim"
   },
   {
-    "nodeVersion": "20.12.2",
+    "version": "20.12.2",
     "variant": "20-buster",
+    "latest": false,
     "tags": [
       "20-buster",
       "20.12-buster",
@@ -187,8 +275,9 @@
     "directory": "20/buster"
   },
   {
-    "nodeVersion": "20.12.2",
+    "version": "20.12.2",
     "variant": "20-buster-slim",
+    "latest": false,
     "tags": [
       "20-buster-slim",
       "20.12-buster-slim",
@@ -199,8 +288,9 @@
     "directory": "20/buster-slim"
   },
   {
-    "nodeVersion": "18.20.2",
+    "version": "18.20.2",
     "variant": "18-alpine3.18",
+    "latest": false,
     "tags": [
       "18-alpine3.18",
       "18.20-alpine3.18",
@@ -210,8 +300,9 @@
     "directory": "18/alpine3.18"
   },
   {
-    "nodeVersion": "18.20.2",
+    "version": "18.20.2",
     "variant": "18-alpine",
+    "latest": false,
     "tags": [
       "18-alpine",
       "18-alpine3.19",
@@ -225,8 +316,9 @@
     "directory": "18/alpine3.19"
   },
   {
-    "nodeVersion": "18.20.2",
+    "version": "18.20.2",
     "variant": "18",
+    "latest": false,
     "tags": [
       "18",
       "18-bookworm",
@@ -240,8 +332,9 @@
     "directory": "18/bookworm"
   },
   {
-    "nodeVersion": "18.20.2",
+    "version": "18.20.2",
     "variant": "18-bookworm-slim",
+    "latest": false,
     "tags": [
       "18-bookworm-slim",
       "18-slim",
@@ -255,8 +348,9 @@
     "directory": "18/bookworm-slim"
   },
   {
-    "nodeVersion": "18.20.2",
+    "version": "18.20.2",
     "variant": "18-bullseye",
+    "latest": false,
     "tags": [
       "18-bullseye",
       "18.20-bullseye",
@@ -266,8 +360,9 @@
     "directory": "18/bullseye"
   },
   {
-    "nodeVersion": "18.20.2",
+    "version": "18.20.2",
     "variant": "18-bullseye-slim",
+    "latest": false,
     "tags": [
       "18-bullseye-slim",
       "18.20-bullseye-slim",
@@ -277,8 +372,9 @@
     "directory": "18/bullseye-slim"
   },
   {
-    "nodeVersion": "18.20.2",
+    "version": "18.20.2",
     "variant": "18-buster",
+    "latest": false,
     "tags": [
       "18-buster",
       "18.20-buster",
@@ -288,8 +384,9 @@
     "directory": "18/buster"
   },
   {
-    "nodeVersion": "18.20.2",
+    "version": "18.20.2",
     "variant": "18-buster-slim",
+    "latest": false,
     "tags": [
       "18-buster-slim",
       "18.20-buster-slim",

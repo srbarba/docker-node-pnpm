@@ -33,6 +33,7 @@ export async function getNodeVariants(dir) {
     let variants = config[version].variants;
     let fullversion;
     for (const variant in variants) {
+      let isLatest = false
       let dockerfilePath = path.join(dir, version, variant, "Dockerfile");
       let isAlpine = aplineRE.test(variant);
       let isSlim = slimRE.test(variant);
@@ -114,6 +115,7 @@ export async function getNodeVariants(dir) {
           tags.push("current-alpine");
         }
         if (variant === defaultDebian) {
+          isLatest = true
           tags.push(variant);
           tags.push("latest");
           tags.push("current");
@@ -157,8 +159,9 @@ export async function getNodeVariants(dir) {
 
       let directory = `${version}/${variant}`;
       versionsTags.push({
-        nodeVersion: `${fullversion.groups.major}.${fullversion.groups.minor}.${fullversion.groups.patch}`,
+        version: `${fullversion.groups.major}.${fullversion.groups.minor}.${fullversion.groups.patch}`,
         variant: mainVariant,
+        latest: isLatest,
         tags,
         directory,
       });

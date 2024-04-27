@@ -10,9 +10,11 @@ on:
     paths:
       - "index.mjs"
       - "getNodeVariants.mjs"
-      - "prepareTags.mjs"
+      - "getPnpmVariants.mjs"
       - "getDockerImagePlatforms.mjs"
       - "nodeVariants.json"
+      - "pnpmVariants.json"
+      - "allVariants.json"
       - "Dockerfile"
       - ".github/workflows/update-images.yml"
 
@@ -76,15 +78,6 @@ jobs:
           username: "srbarba"
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Prepare tags for test Docker images
-        id: prepare_test_tags
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const { DOCKER_REPO } = process.env
-            const { prepareTags } = await import('${{ github.workspace }}/prepareTags.mjs')
-            return prepareTags(${{ toJson(matrix.variant.tags) }}, `${DOCKER_REPO}:test-`)
-
       - name: Build and test Docker images
         uses: docker/build-push-action@v5
         with:
@@ -93,23 +86,14 @@ jobs:
           push: false
           build-args: |
             NODE_VARIANT=${{ matrix.variant.variant }}
-          tags: ${{ join(fromJson(steps.prepare_test_tags.outputs.result), ',') }}
+            PNPM_VERSION=${{ matrix.variant.pnpm }}
+          tags: ${{ matrix.variant.testTag }}
           load: true
 
       - name: Test Docker image
         run: |
-          docker run --rm ${{ fromJson(steps.prepare_test_tags.outputs.result)[0] }} node -v
-          docker run --rm ${{ fromJson(steps.prepare_test_tags.outputs.result)[0] }} pnpm -v
-
-      - name: Prepare tags for production Docker images
-        id: prepare_producction_tags
-        uses: actions/github-script@v7
-        with:
-          retries: 3
-          script: |
-            const { DOCKER_REPO } = process.env
-            const { prepareTags } = await import('${{ github.workspace }}/prepareTags.mjs')
-            return prepareTags(${{ toJson(matrix.variant.tags) }}, `${DOCKER_REPO}:`)
+          docker run --rm ${{ matrix.variant.testTag }} node -v
+          docker run --rm ${{ matrix.variant.testTag }} pnpm -v
 
       - name: Get image platforms
         id: get_image_platforms
@@ -129,7 +113,8 @@ jobs:
           platforms: ${{ join(fromJson(steps.get_image_platforms.outputs.result), ',') }}
           build-args: |
             NODE_VARIANT=${{ matrix.variant.variant }}
-          tags: ${{ join(fromJson(steps.prepare_producction_tags.outputs.result), ',') }}
+            PNPM_VERSION=${{ matrix.variant.pnpm }}
+          tags: ${{ join(matrix.variant.tags, ',') }}
 
   update_repository:
     needs: build_and_test_images
