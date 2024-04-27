@@ -3,7 +3,7 @@ import { getNodeVariants } from "./getNodeVariants.mjs";
 import { getPnpmVariants } from "./getPnpmVariants.mjs";
 import fs from "fs";
 
-export async function getVariantsToUpdate() {
+export async function getVariantsToUpdate(tagsPrefix) {
   const allNodeVariants = await getAllNodeVariants();
   const allPnpmVariants = await getAllPnpmVariants();
   const { needsToUpdateVariants } = getAllVariants(
@@ -11,7 +11,11 @@ export async function getVariantsToUpdate() {
     allPnpmVariants
   );
 
- return needsToUpdateVariants 
+  return needsToUpdateVariants.map((variant) => ({
+    ...variant,
+    testTag: `${tagsPrefix}-${variant.testTag}`,
+    tags: variant.tags.map((tag) => `${tagsPrefix}-${tag}`),
+  }));
 }
 
 function getAllVariants(allNodeVariants, allPnpmVariants) {
@@ -59,7 +63,10 @@ function getAllVariants(allNodeVariants, allPnpmVariants) {
       }, [])
     );
   }, []);
-  fs.writeFileSync("allVariants.json", JSON.stringify(allVariants, null, 2));
+  fs.writeFileSync(
+    "../variants/allVariants.json",
+    JSON.stringify(allVariants, null, 2)
+  );
 
   const needsToUpdateVariants = getNeedsToUpdateVariants(
     allVariants,
@@ -75,7 +82,7 @@ function getAllVariants(allNodeVariants, allPnpmVariants) {
 async function getAllPnpmVariants() {
   const allPnpmVariants = await getPnpmVariants();
   fs.writeFileSync(
-    "pnpmVariants.json",
+    "../variants/pnpmVariants.json",
     JSON.stringify(allPnpmVariants, null, 2)
   );
   return allPnpmVariants;
@@ -87,7 +94,7 @@ async function getAllNodeVariants() {
   });
   const allNodeVariants = await getNodeVariants(dir);
   fs.writeFileSync(
-    "nodeVariants.json",
+    "../variants/nodeVariants.json",
     JSON.stringify(allNodeVariants, null, 2)
   );
   return allNodeVariants;

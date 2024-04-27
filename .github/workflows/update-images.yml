@@ -8,13 +8,13 @@ on:
     branches:
       - main
     paths:
-      - "index.mjs"
-      - "getNodeVariants.mjs"
-      - "getPnpmVariants.mjs"
-      - "getDockerImagePlatforms.mjs"
-      - "nodeVariants.json"
-      - "pnpmVariants.json"
-      - "allVariants.json"
+      - "src/index.mjs"
+      - "src/getNodeVariants.mjs"
+      - "src/getPnpmVariants.mjs"
+      - "src/getDockerImagePlatforms.mjs"
+      - "variants/nodeVariants.json"
+      - "variants/pnpmVariants.json"
+      - "variants/allVariants.json"
       - "Dockerfile"
       - ".github/workflows/update-images.yml"
 
@@ -33,11 +33,8 @@ jobs:
         with:
           node-version: "latest"
 
-      - name: Install pnpm
-        run: npm install -g pnpm@latest
-
       - name: Install dependencies with pnpm
-        run: pnpm install --frozen-lockfile
+        run: npm ci
 
       - name: Run getNodeVariantsToUpdate script and capture output
         id: run_script
@@ -46,14 +43,14 @@ jobs:
           NODE_NO_WARNINGS: 1
         with:
           script: |
-            const { getVariantsToUpdate } = await import('${{ github.workspace }}/index.mjs')
-            return getVariantsToUpdate()
+            const { getVariantsToUpdate } = await import('${{ github.workspace }}/src/index.mjs')
+            return getVariantsToUpdate('srbarba/')
 
       - name: Upload nodeVariants.json for use in other jobs
         uses: actions/upload-artifact@v4
         with:
-          name: node-variants
-          path: nodeVariants.json
+          name: variants-folder
+          path: variants
 
   build_and_test_images:
     needs: prepare_variants
@@ -75,7 +72,7 @@ jobs:
       - name: Log in to Docker Hub
         uses: docker/login-action@v3
         with:
-          username: "srbarba"
+          username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build and test Docker images
@@ -124,10 +121,10 @@ jobs:
       - name: Checkout the repo
         uses: actions/checkout@v4
 
-      - name: Download nodeVariants.json for commit
+      - name: Download variants folder for commit
         uses: actions/download-artifact@v4
         with:
-          name: node-variants
+          name: variants-folder
 
       - name: Prepare variant names for commit message
         id: prepare_commit
@@ -144,7 +141,7 @@ jobs:
           title: "feat: update variants ${{ steps.prepare_commit.outputs.variant_names }}"
           branch: "feature/update-variants"
           delete-branch: true
-          add-paths: "nodeVariants.json,allVariants.json,pnpmVariants.json"
+          add-paths: "variants/nodeVariants.json,variants/allVariants.json,variants/pnpmVariants.json"
 
       - name: Enable Pull Request Automerge
         if: steps.create_pull_request.outputs.pull-request-operation == 'created'
