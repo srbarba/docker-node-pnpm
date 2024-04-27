@@ -19,7 +19,7 @@ export async function getVariantsToUpdate(tagsPrefix) {
 }
 
 function getAllVariants(allNodeVariants, allPnpmVariants) {
-  const oldVariants = silentlyReadFile("allVariants.json", []);
+  const oldVariants = silentlyReadFile("./variants/allVariants.json", []);
   const allVariants = allPnpmVariants.reduce((pnpmAcc, pnpmVariant) => {
     return pnpmAcc.concat(
       ...allNodeVariants.reduce((nodeAcc, nodeVariant) => {
@@ -64,7 +64,7 @@ function getAllVariants(allNodeVariants, allPnpmVariants) {
     );
   }, []);
   fs.writeFileSync(
-    "../variants/allVariants.json",
+    "./variants/allVariants.json",
     JSON.stringify(allVariants, null, 2)
   );
 
@@ -82,7 +82,7 @@ function getAllVariants(allNodeVariants, allPnpmVariants) {
 async function getAllPnpmVariants() {
   const allPnpmVariants = await getPnpmVariants();
   fs.writeFileSync(
-    "../variants/pnpmVariants.json",
+    "./variants/pnpmVariants.json",
     JSON.stringify(allPnpmVariants, null, 2)
   );
   return allPnpmVariants;
@@ -94,7 +94,7 @@ async function getAllNodeVariants() {
   });
   const allNodeVariants = await getNodeVariants(dir);
   fs.writeFileSync(
-    "../variants/nodeVariants.json",
+    "./variants/nodeVariants.json",
     JSON.stringify(allNodeVariants, null, 2)
   );
   return allNodeVariants;
