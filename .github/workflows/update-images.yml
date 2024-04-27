@@ -57,7 +57,6 @@ jobs:
   build_and_test_images:
     needs: prepare_variants
     runs-on: ubuntu-latest
-    if: ${{ fromJson(needs.prepare_variants.outputs.variants).length > 0 }}
     outputs:
       variants: ${{ needs.prepare_variants.outputs.variants }}
     strategy:
