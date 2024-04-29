@@ -149,7 +149,7 @@ jobs:
       - name: Prepare variant names for commit message
         id: prepare_commit
         run: |
-          variant_names=$(echo '${{ needs.build_and_test_images.outputs.variants }}' | jq -r '.[].variant' | paste -sd, -)
+          variant_names=$(echo '${{ needs.build_and_test_images.outputs.variants }}' | jq -r '.[].nodeVariant' | paste -sd, -)
           echo "variant_names=$variant_names" >> $GITHUB_OUTPUT
 
       - name: Create Pull Request
