@@ -146,19 +146,13 @@ jobs:
           name: variants-folder
           path: variants
 
-      - name: Prepare variant names for commit message
-        id: prepare_commit
-        run: |
-          variant_names=$(echo '${{ needs.build_and_test_images.outputs.variants }}' | jq -r '.[].nodeVariant' | paste -sd, -)
-          echo "variant_names=$variant_names" >> $GITHUB_OUTPUT
-
       - name: Create Pull Request
         id: create_pull_request
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "feat: update variants ${{ steps.prepare_commit.outputs.variant_names }}"
-          title: "feat: update variants ${{ steps.prepare_commit.outputs.variant_names }}"
+          commit-message: "feat: update variants"
+          title: "feat: update variants"
           branch: "feature/update-variants"
           delete-branch: true
 
