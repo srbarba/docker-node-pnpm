@@ -98,7 +98,7 @@ function getLatestVersions(tags) {
   }, {});
   const lastMajorVersions = Object.values(majors)
     .sort((a, b) => b.major - a.major)
-    .slice(0, 1);
+    .slice(0, 2);
   lastMajorVersions[0].isNext = true;
   return lastMajorVersions;
 }
