@@ -1,15 +1,24 @@
 [
   {
+    "version": "9.1.0-0",
+    "latest": false,
+    "next": true,
+    "tags": [
+      "9.1.0-0",
+      "9-next",
+      "next"
+    ]
+  },
+  {
     "version": "9.0.6",
     "latest": true,
-    "next": true,
+    "next": false,
     "tags": [
       "9",
       "9.0",
       "9.0.6",
       "9-latest",
-      "latest",
-      "next"
+      "latest"
     ]
   },
   {
