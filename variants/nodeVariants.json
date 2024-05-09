@@ -168,29 +168,29 @@
     "directory": "21/bullseye-slim"
   },
   {
-    "version": "20.12.2",
+    "version": "20.13.0",
     "variant": "20-alpine3.18",
     "latest": false,
     "tags": [
       "20-alpine3.18",
-      "20.12-alpine3.18",
-      "20.12.2-alpine3.18",
+      "20.13-alpine3.18",
+      "20.13.0-alpine3.18",
       "iron-alpine3.18",
       "lts-alpine3.18"
     ],
     "directory": "20/alpine3.18"
   },
   {
-    "version": "20.12.2",
+    "version": "20.13.0",
     "variant": "20-alpine",
     "latest": false,
     "tags": [
       "20-alpine",
       "20-alpine3.19",
-      "20.12-alpine",
-      "20.12-alpine3.19",
-      "20.12.2-alpine",
-      "20.12.2-alpine3.19",
+      "20.13-alpine",
+      "20.13-alpine3.19",
+      "20.13.0-alpine",
+      "20.13.0-alpine3.19",
       "iron-alpine",
       "iron-alpine3.19",
       "lts-alpine",
@@ -199,16 +199,16 @@
     "directory": "20/alpine3.19"
   },
   {
-    "version": "20.12.2",
+    "version": "20.13.0",
     "variant": "20",
     "latest": false,
     "tags": [
       "20",
       "20-bookworm",
-      "20.12",
-      "20.12-bookworm",
-      "20.12.2",
-      "20.12.2-bookworm",
+      "20.13",
+      "20.13-bookworm",
+      "20.13.0",
+      "20.13.0-bookworm",
       "iron",
       "iron-bookworm",
       "lts",
@@ -218,16 +218,16 @@
     "directory": "20/bookworm"
   },
   {
-    "version": "20.12.2",
+    "version": "20.13.0",
     "variant": "20-bookworm-slim",
     "latest": false,
     "tags": [
       "20-bookworm-slim",
       "20-slim",
-      "20.12-bookworm-slim",
-      "20.12-slim",
-      "20.12.2-bookworm-slim",
-      "20.12.2-slim",
+      "20.13-bookworm-slim",
+      "20.13-slim",
+      "20.13.0-bookworm-slim",
+      "20.13.0-slim",
       "iron-bookworm-slim",
       "iron-slim",
       "lts-bookworm-slim",
@@ -236,52 +236,52 @@
     "directory": "20/bookworm-slim"
   },
   {
-    "version": "20.12.2",
+    "version": "20.13.0",
     "variant": "20-bullseye",
     "latest": false,
     "tags": [
       "20-bullseye",
-      "20.12-bullseye",
-      "20.12.2-bullseye",
+      "20.13-bullseye",
+      "20.13.0-bullseye",
       "iron-bullseye",
       "lts-bullseye"
     ],
     "directory": "20/bullseye"
   },
   {
-    "version": "20.12.2",
+    "version": "20.13.0",
     "variant": "20-bullseye-slim",
     "latest": false,
     "tags": [
       "20-bullseye-slim",
-      "20.12-bullseye-slim",
-      "20.12.2-bullseye-slim",
+      "20.13-bullseye-slim",
+      "20.13.0-bullseye-slim",
       "iron-bullseye-slim",
       "lts-bullseye-slim"
     ],
     "directory": "20/bullseye-slim"
   },
   {
-    "version": "20.12.2",
+    "version": "20.13.0",
     "variant": "20-buster",
     "latest": false,
     "tags": [
       "20-buster",
-      "20.12-buster",
-      "20.12.2-buster",
+      "20.13-buster",
+      "20.13.0-buster",
       "iron-buster",
       "lts-buster"
     ],
     "directory": "20/buster"
   },
   {
-    "version": "20.12.2",
+    "version": "20.13.0",
     "variant": "20-buster-slim",
     "latest": false,
     "tags": [
       "20-buster-slim",
-      "20.12-buster-slim",
-      "20.12.2-buster-slim",
+      "20.13-buster-slim",
+      "20.13.0-buster-slim",
       "iron-buster-slim",
       "lts-buster-slim"
     ],
