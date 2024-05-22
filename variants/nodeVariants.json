@@ -288,19 +288,19 @@
     "directory": "20/buster-slim"
   },
   {
-    "version": "18.20.2",
+    "version": "18.20.3",
     "variant": "18-alpine3.18",
     "latest": false,
     "tags": [
       "18-alpine3.18",
       "18.20-alpine3.18",
-      "18.20.2-alpine3.18",
+      "18.20.3-alpine3.18",
       "hydrogen-alpine3.18"
     ],
     "directory": "18/alpine3.18"
   },
   {
-    "version": "18.20.2",
+    "version": "18.20.3",
     "variant": "18-alpine",
     "latest": false,
     "tags": [
@@ -308,15 +308,15 @@
       "18-alpine3.19",
       "18.20-alpine",
       "18.20-alpine3.19",
-      "18.20.2-alpine",
-      "18.20.2-alpine3.19",
+      "18.20.3-alpine",
+      "18.20.3-alpine3.19",
       "hydrogen-alpine",
       "hydrogen-alpine3.19"
     ],
     "directory": "18/alpine3.19"
   },
   {
-    "version": "18.20.2",
+    "version": "18.20.3",
     "variant": "18",
     "latest": false,
     "tags": [
@@ -324,15 +324,15 @@
       "18-bookworm",
       "18.20",
       "18.20-bookworm",
-      "18.20.2",
-      "18.20.2-bookworm",
+      "18.20.3",
+      "18.20.3-bookworm",
       "hydrogen",
       "hydrogen-bookworm"
     ],
     "directory": "18/bookworm"
   },
   {
-    "version": "18.20.2",
+    "version": "18.20.3",
     "variant": "18-bookworm-slim",
     "latest": false,
     "tags": [
@@ -340,57 +340,57 @@
       "18-slim",
       "18.20-bookworm-slim",
       "18.20-slim",
-      "18.20.2-bookworm-slim",
-      "18.20.2-slim",
+      "18.20.3-bookworm-slim",
+      "18.20.3-slim",
       "hydrogen-bookworm-slim",
       "hydrogen-slim"
     ],
     "directory": "18/bookworm-slim"
   },
   {
-    "version": "18.20.2",
+    "version": "18.20.3",
     "variant": "18-bullseye",
     "latest": false,
     "tags": [
       "18-bullseye",
       "18.20-bullseye",
-      "18.20.2-bullseye",
+      "18.20.3-bullseye",
       "hydrogen-bullseye"
     ],
     "directory": "18/bullseye"
   },
   {
-    "version": "18.20.2",
+    "version": "18.20.3",
     "variant": "18-bullseye-slim",
     "latest": false,
     "tags": [
       "18-bullseye-slim",
       "18.20-bullseye-slim",
-      "18.20.2-bullseye-slim",
+      "18.20.3-bullseye-slim",
       "hydrogen-bullseye-slim"
     ],
     "directory": "18/bullseye-slim"
   },
   {
-    "version": "18.20.2",
+    "version": "18.20.3",
     "variant": "18-buster",
     "latest": false,
     "tags": [
       "18-buster",
       "18.20-buster",
-      "18.20.2-buster",
+      "18.20.3-buster",
       "hydrogen-buster"
     ],
     "directory": "18/buster"
   },
   {
-    "version": "18.20.2",
+    "version": "18.20.3",
     "variant": "18-buster-slim",
     "latest": false,
     "tags": [
       "18-buster-slim",
       "18.20-buster-slim",
-      "18.20.2-buster-slim",
+      "18.20.3-buster-slim",
       "hydrogen-buster-slim"
     ],
     "directory": "18/buster-slim"
